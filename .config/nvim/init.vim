@@ -66,9 +66,6 @@ Plug 'tpope/vim-fugitive'
 " formatter
 Plug 'sbdchd/neoformat'
 
-" flutter
-Plug 'akinsho/flutter-tools.nvim'
-
 call plug#end()
 
 colorscheme gruvbox
@@ -128,6 +125,15 @@ nnoremap <silent> gr :Telescope lsp_references<CR>
 " lsp keymaps
 nnoremap <silent> gd :lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> gD :lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> <Leader>lh :lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <Leader>lws :lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> <Leader>lf :lua vim.diagnostic.open_float()<CR>
+nnoremap <silent> <Leader>ln :lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap <silent> <Leader>lp :lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent> <Leader>lca :lua vim.lsp.buf.code_action()<CR>
+nnoremap <silent> <Leader>lrr :lua vim.lsp.buf.references()<CR>
+nnoremap <silent> <Leader>lrn :lua vim.lsp.buf.rename()<CR>
+inoremap <silent> <C-h> :lua vim.lsp.buf.signature_help()<CR>
 
 " fugitive keymaps
 nnoremap <silent> <Leader>gs :G <CR>

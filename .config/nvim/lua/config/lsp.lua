@@ -65,10 +65,6 @@ lspconfig.cssls.setup {
     capabilities = capabilities,
 }
 
-lspconfig.cssmodules_ls.setup {
-    capabilities = capabilities,
-}
-
 lspconfig.ccls.setup {
     capabilities = capabilities,
 }
@@ -88,9 +84,6 @@ lspconfig.gopls.setup{
 lspconfig.prismals.setup{
     capabilities = capabilities,
 }
-
--- flutter (not from nvim-lsp)
-require("flutter-tools").setup{}
 
 -- css
 lspconfig.tailwindcss.setup{
