@@ -142,5 +142,12 @@ nnoremap <silent> <Leader>gc :G commit <CR>
 " Neoformat
 nnoremap <silent> <Leader>n :Neoformat <CR>
 
+" Git
+nmap <leader>gj :diffget //3<CR>
+nmap <leader>gf :diffget //2<CR>
+
 filetype plugin on
 filetype indent plugin on
+
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,php,javascript,typescript,jsx EmmetInstall

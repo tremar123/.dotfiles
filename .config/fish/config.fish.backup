@@ -17,6 +17,3 @@ if status is-interactive
         end
     end
 end
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/mnt/data/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/mnt/data/Downloads/google-cloud-sdk/path.fish.inc'; end

@@ -90,3 +90,14 @@ lspconfig.tailwindcss.setup{
     capabilities = capabilities,
 }
 
+lspconfig.dockerls.setup{
+    capabilities = capabilities,
+}
+
+lspconfig.phpactor.setup{
+    capabilities = capabilities,
+}
+
+lspconfig.sqlls.setup{
+    capabilities = capabilities,
+}
