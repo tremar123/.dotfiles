@@ -74,12 +74,6 @@ highlight Normal ctermbg=none
 
 let mapleader = " "
 
-" window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>h :split<CR>
 

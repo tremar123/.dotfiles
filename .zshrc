@@ -13,7 +13,7 @@ PS1='%F{green}%~ %F{foreground}$ %F{foreground}'
 
 alias ls="ls --color"
 alias la="ls --color -a"
-alias ll="ls --color -la"
+alias ll="ls --color -la --group-directories-first"
 alias vim="nvim"
 alias :q="exit"
 alias :Q="exit"
