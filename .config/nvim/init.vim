@@ -54,7 +54,7 @@ Plug 'p00f/nvim-ts-rainbow'
 
 " autopairs
 Plug 'windwp/nvim-autopairs'
-Plug 'appelgriebsch/surround.nvim'
+Plug 'ur4ltz/surround.nvim'
 
 " comments
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -104,9 +104,6 @@ nnoremap <silent> x "_x
 
 lua require("config")
 
-let g:user_emmet_install_global = 0
-autocmd FileType html,javascript,javascriptreact,typescript,typescriptreact EmmetInstall
-
 " use capital letters
 :command! -bar -bang Q quit<bang>
 :command W w
@@ -144,4 +141,4 @@ filetype plugin on
 filetype indent plugin on
 
 let g:user_emmet_install_global = 0
-autocmd FileType html,css,php,javascript,typescript,jsx EmmetInstall
+autocmd FileType html,php,javascript,javascriptreact,typescript,typescriptreact EmmetInstall

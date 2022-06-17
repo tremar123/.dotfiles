@@ -17,7 +17,6 @@ alias ll="ls --color -la --group-directories-first"
 alias vim="nvim"
 alias :q="exit"
 alias :Q="exit"
-alias config="git --git-dir=$HOME/.dotfiles"
 
 function dev {
     if [ "$1" != "" ]; then
