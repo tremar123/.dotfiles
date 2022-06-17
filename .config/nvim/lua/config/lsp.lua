@@ -65,10 +65,6 @@ lspconfig.cssls.setup {
     capabilities = capabilities,
 }
 
-lspconfig.ccls.setup {
-    capabilities = capabilities,
-}
-
 lspconfig.rust_analyzer.setup {
     capabilities = capabilities,
 }
@@ -85,19 +81,10 @@ lspconfig.prismals.setup{
     capabilities = capabilities,
 }
 
--- css
 lspconfig.tailwindcss.setup{
     capabilities = capabilities,
 }
 
-lspconfig.dockerls.setup{
-    capabilities = capabilities,
-}
-
 lspconfig.phpactor.setup{
-    capabilities = capabilities,
-}
-
-lspconfig.sqlls.setup{
     capabilities = capabilities,
 }
