@@ -296,8 +296,8 @@ set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
 set $ws5 "5:"
-set $ws6 "6:"
-set $ws7 "7:"
+set $ws6 "6:"
+set $ws7 "7:"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -316,8 +316,9 @@ assign [class="Alacritty"] $ws1
 assign [class="(?i)firefox"] $ws2
 assign [class="discord"] $ws3
 assign [class="Thunar"] $ws5
-assign [class="Blender"] $ws6
-assign [class="DesktopEditors"] $ws7
+assign [class="DesktopEditors"] $ws6
+assign [class="Blender"] $ws7
+assign [class="Gimp"] $ws7
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Alacritty] focus
@@ -327,6 +328,7 @@ for_window [class="Spotify"] move container to workspace $ws4 focus
 for_window [class=Thunar] focus
 for_window [class=Blender] focus
 for_window [class=DesktopEditors] focus
+for_window [class=Gimp] focus
 
 ##############
 # compositor #
@@ -347,7 +349,7 @@ for_window [class=DesktopEditors] focus
 #
 # picom: https://wiki.archlinux.org/title/Picom
 # manpage: https://man.archlinux.org/man/picom.1.en
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id picom -b --experimental-backends
 #exec_always --no-startup-id killall picom && picom -b
 #exec_always --no-startup-id picom --config ~/.config/picom.conf
 
