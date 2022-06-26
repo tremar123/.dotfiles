@@ -298,7 +298,7 @@ set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
 set $ws7 "7:"
-set $ws8 "8"
+set $ws8 "8:"
 set $ws9 "9"
 set $ws10 "10"
 
@@ -319,6 +319,7 @@ assign [class="Thunar"] $ws5
 assign [class="DesktopEditors"] $ws6
 assign [class="Blender"] $ws7
 assign [class="Gimp"] $ws7
+assign [class="Virt-manager"] $ws8
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Alacritty] focus
@@ -329,6 +330,7 @@ for_window [class=Thunar] focus
 for_window [class=Blender] focus
 for_window [class=DesktopEditors] focus
 for_window [class=Gimp] focus
+for_window [class=Virt-manager] focus
 
 ##############
 # compositor #
