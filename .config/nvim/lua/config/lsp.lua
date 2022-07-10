@@ -85,6 +85,14 @@ lspconfig.tailwindcss.setup{
     capabilities = capabilities,
 }
 
-lspconfig.phpactor.setup{
+lspconfig.astro.setup {
+    capabilities = capabilities,
+}
+
+lspconfig.eslint.setup {
+    capabilities = capabilities,
+}
+
+lspconfig.sumneko_lua.setup {
     capabilities = capabilities,
 }
