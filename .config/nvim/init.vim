@@ -139,6 +139,7 @@ nmap <leader>gf :diffget //2<CR>
 
 filetype plugin on
 filetype indent plugin on
+autocmd BufRead,BufEnter *.astro set filetype=astro
 
 let g:user_emmet_install_global = 0
-autocmd FileType html,php,javascript,javascriptreact,typescript,typescriptreact EmmetInstall
+autocmd FileType html,php,astro,javascript,javascriptreact,typescript,typescriptreact EmmetInstall
