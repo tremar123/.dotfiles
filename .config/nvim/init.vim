@@ -132,6 +132,7 @@ nnoremap <silent> <Leader>gc :G commit <CR>
 
 " Neoformat
 nnoremap <silent> <Leader>n :Neoformat <CR>
+let g:neoformat_try_node_exe = 1
 
 " Git
 nmap <leader>gj :diffget //3<CR>
