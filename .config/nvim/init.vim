@@ -75,7 +75,7 @@ highlight Normal ctermbg=none
 let mapleader = " "
 
 nnoremap <Leader>v :vsplit<CR>
-nnoremap <Leader>h :split<CR>
+nnoremap <Leader>b :split<CR>
 
 nnoremap <C-Up> :resize -2<CR>
 nnoremap <C-Down> :resize +2<CR>
