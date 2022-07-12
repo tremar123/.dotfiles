@@ -1,0 +1,17 @@
+#!/bin/bash
+
+ignored=(".local" ".config/discord" "node_modules" ".cache" ".git" ".npm" ".npm-packages" ".gradle" ".java" "Android" ".android")
+
+cmd="find $HOME $HOME/Development/"
+
+for folder in "${ignored[@]}"
+do
+    cmd+=" ! -path '*/$folder/*'"
+done
+
+selected_file="$(eval $cmd | fzf)"
+
+if [ "$selected_file" != "" ];
+then
+    nvim $selected_file
+fi
