@@ -38,3 +38,5 @@ export PATH="$PATH:$HOME/.local/bin"
 # up arrow completes command from history
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+
+export EDITOR=nvim

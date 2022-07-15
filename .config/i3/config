@@ -438,6 +438,7 @@ for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 
 for_window [title="Blender Render"] floating enable resize set 1500 px 800 px
+for_window [title="Android Emulator"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable
