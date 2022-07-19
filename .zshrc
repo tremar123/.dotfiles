@@ -40,3 +40,21 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
 export EDITOR=nvim
+
+function fcd() {
+    ignored=(".local" ".config/discord" "node_modules" ".cache" ".git" ".npm" ".npm-packages" ".gradle" ".java" ".android")
+
+    cmd="find $HOME $HOME/Development/ -type d"
+
+    for folder in "${ignored[@]}"
+    do
+        cmd+=" ! -path '*/$folder/*'"
+    done
+
+    selected_folder="$(eval $cmd | fzf)"
+
+    if [ "$selected_folder" != "" ];
+    then
+        cd $selected_folder
+    fi
+}
