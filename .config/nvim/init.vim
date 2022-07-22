@@ -1,5 +1,6 @@
 syntax on
 
+set noshowmode 
 set number
 set tabstop=4
 set softtabstop=4
@@ -34,6 +35,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-path'
 
+"Plug 'williamboman/nvim-lsp-installer'
+
 "snippets
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
@@ -65,6 +68,11 @@ Plug 'tpope/vim-fugitive'
 
 " formatter
 Plug 'sbdchd/neoformat'
+
+" lualine
+Plug 'nvim-lualine/lualine.nvim'
+
+Plug 'kyazdani42/nvim-web-devicons'
 
 call plug#end()
 
@@ -124,7 +132,6 @@ nnoremap <silent> <Leader>lp :lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <Leader>lca :lua vim.lsp.buf.code_action()<CR>
 nnoremap <silent> <Leader>lrr :lua vim.lsp.buf.references()<CR>
 nnoremap <silent> <Leader>lrn :lua vim.lsp.buf.rename()<CR>
-inoremap <silent> <C-h> :lua vim.lsp.buf.signature_help()<CR>
 
 " fugitive keymaps
 nnoremap <silent> <Leader>gs :G <CR>
