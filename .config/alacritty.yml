@@ -2,9 +2,10 @@ font:
   normal:
     family: NotoSansMono Nerd Font
     style: Regular
+  size: 12
 
 window:
-  opacity: 0.9
+  opacity: 0.88
 
 # Colors (Gruvbox dark)
 colors:

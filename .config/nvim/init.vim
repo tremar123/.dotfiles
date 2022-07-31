@@ -19,8 +19,8 @@ set mouse=a
 set clipboard+=unnamedplus
 set splitbelow
 set splitright
-set scrolloff=10
-set sidescrolloff=8
+set scrolloff=6
+set sidescrolloff=15
 set completeopt=menu,menuone,noselect
 set pumheight=10
 set signcolumn=yes
@@ -144,6 +144,9 @@ let g:neoformat_try_node_exe = 1
 " Git
 nmap <leader>gj :diffget //3<CR>
 nmap <leader>gf :diffget //2<CR>
+
+" increase number
+nnoremap <silent> <C-s> <C-a>
 
 filetype plugin on
 filetype indent plugin on
