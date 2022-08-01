@@ -147,6 +147,7 @@ nmap <leader>gf :diffget //2<CR>
 
 " increase number
 nnoremap <silent> <C-s> <C-a>
+inoremap <silent> <C-c> <Esc>
 
 filetype plugin on
 filetype indent plugin on

@@ -34,6 +34,7 @@ export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # up arrow completes command from history
 bindkey '\e[A' history-search-backward
