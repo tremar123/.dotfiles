@@ -70,6 +70,10 @@ vim.diagnostic.config({
 	},
 })
 
+lspconfig.html.setup({
+	capabilities = capabilities,
+})
+
 lspconfig.tsserver.setup({
 	capabilities = capabilities,
 })
@@ -112,4 +116,11 @@ lspconfig.eslint.setup({
 
 lspconfig.sumneko_lua.setup({
 	capabilities = capabilities,
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+		},
+	},
 })
