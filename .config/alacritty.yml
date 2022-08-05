@@ -1,7 +1,7 @@
 font:
-  normal:
-    family: NotoSansMono Nerd Font
-    style: Regular
+  #normal:
+    #family: NotoSansMono Nerd Font
+    #style: Regular
   size: 12
 
 window:
