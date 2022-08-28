@@ -31,6 +31,7 @@ vim.api.nvim_set_hl(0, "Normal", { ctermbg = nil })
 
 vim.cmd([[
 let g:neoformat_try_node_exe = 1
+let g:neoformat_enabled_yaml = ["prettier"]
 filetype plugin on
 filetype indent plugin on
 autocmd BufRead,BufEnter *.astro set filetype=astro
