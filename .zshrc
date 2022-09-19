@@ -19,11 +19,20 @@ alias :q="exit"
 alias :Q="exit"
 alias ...="cd ../.."
 
-function dev {
+function work {
     if [ "$1" != "" ]; then
-        cd "$HOME/Development/$1"
+        cd "$HOME/work/$1"
     else
-        cd "$HOME/Development"
+        cd "$HOME/work"
+        ls
+    fi
+}
+
+function p {
+    if [ "$1" != "" ]; then
+        cd "$HOME/personal/$1"
+    else
+        cd "$HOME/personal"
         ls
     fi
 }
