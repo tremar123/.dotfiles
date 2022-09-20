@@ -61,5 +61,4 @@ keymap("n", "<leader>gj", ":diffget //3<CR>", opts)
 keymap("n", "<leader>gf", ":diffget //2<CR>", opts)
 
 -- increase number
-keymap("n", "<C-s>", "<C-a>", opts)
 keymap("i", "<C-c>", "<Esc>", opts)
