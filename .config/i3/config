@@ -282,6 +282,8 @@ bindsym $mod+b exec firefox
 bindsym $mod+e exec thunar
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/screenshots/"
 
+bindsym $mod+a exec discord, exec spotify, exec firefox, exec alacritty -e tmux
+
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 
@@ -319,6 +321,7 @@ assign [class="Thunar"] $ws5
 assign [class="DesktopEditors"] $ws6
 assign [class="Blender"] $ws7
 assign [class="Gimp"] $ws7
+assign [class="Inkscape"] $ws7
 assign [class="Virt-manager"] $ws8
 
 # automatic set focus new window if it opens on another workspace then the current:
@@ -330,6 +333,7 @@ for_window [class=Thunar] focus
 for_window [class=Blender] focus
 for_window [class=DesktopEditors] focus
 for_window [class=Gimp] focus
+for_window [class=Inkscape] focus
 for_window [class=Virt-manager] focus
 
 ##############
