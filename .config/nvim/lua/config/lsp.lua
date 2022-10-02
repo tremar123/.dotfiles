@@ -4,10 +4,9 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local lspconfig = require("lspconfig")
 
--- TODO: this crap takes long to load
 -- luasnip setup
 local luasnip = require("luasnip")
-require("luasnip.loaders.from_vscode").load()
+require("luasnip.loaders.from_vscode").lazy_load()
 
 -- nvim-cmp setup
 local cmp = require("cmp")
