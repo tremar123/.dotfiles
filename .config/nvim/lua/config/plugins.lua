@@ -8,7 +8,6 @@ return require("packer").startup(function(use)
 	use("ur4ltz/surround.nvim")
 
 	-- comments
-	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("numToStr/Comment.nvim")
 
 	-- git

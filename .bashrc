@@ -1,4 +1,4 @@
-PS1='%F{magenta}%m:%F{blue}%~ %F{foreground}$ %F{foreground}'
+PS1='\e[1;35m\u@\H:\e[1;34m\w\n\e[1;37m$ '
 
 alias ls="ls --color"
 alias la="ls --color -a"
@@ -8,6 +8,5 @@ alias :q="exit"
 alias :Q="exit"
 alias ...="cd ../.."
 alias ..="cd .."
-
 
 export EDITOR=nvim

@@ -29,7 +29,4 @@ vim.cmd([[
 filetype plugin on
 filetype indent plugin on
 autocmd BufRead,BufEnter *.astro set filetype=astro
-
-let g:user_emmet_install_global = 0
-autocmd FileType html,php,astro,javascript,javascriptreact,typescript,typescriptreact EmmetInstall
 ]])

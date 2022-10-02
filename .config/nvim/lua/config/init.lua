@@ -1,5 +1,5 @@
-require("config.plugins")
 require("config.sets")
-require("config.autopairs")
-require("config.comments")
 require("config.keymap")
+require("config.plugins")
+require("config.after_plugins")
+require("config.autopairs")
