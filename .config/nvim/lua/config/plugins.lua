@@ -1,31 +1,7 @@
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
 
-	-- lsp
-	use("neovim/nvim-lspconfig")
-	use("hrsh7th/nvim-cmp")
-	use("hrsh7th/cmp-nvim-lsp")
-	use("hrsh7th/cmp-path")
-
-	--use 'williamboman/nvim-lsp-installer'
-
-	--snippets
-	use("L3MON4D3/LuaSnip")
-	use("saadparwaiz1/cmp_luasnip")
-	use("rafamadriz/friendly-snippets")
-
 	use("mattn/emmet-vim")
-
-	-- color schemes
-	use("morhetz/gruvbox")
-
-	-- telescope
-	use("nvim-lua/plenary.nvim")
-	use("nvim-telescope/telescope.nvim")
-
-	-- treesitter
-	use("nvim-treesitter/nvim-treesitter") --, {'do': ':TSUpdate'}
-	use("p00f/nvim-ts-rainbow")
 
 	-- autopairs
 	use("windwp/nvim-autopairs")
@@ -37,12 +13,4 @@ return require("packer").startup(function(use)
 
 	-- git
 	use("tpope/vim-fugitive")
-
-	-- formatter
-	use("sbdchd/neoformat")
-
-	-- lualine
-	use("nvim-lualine/lualine.nvim")
-
-	use("kyazdani42/nvim-web-devicons")
 end)
