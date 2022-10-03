@@ -89,15 +89,15 @@ _G.packer_plugins = {
     path = "/home/jambi/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-surround"] = {
+    loaded = true,
+    path = "/home/jambi/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jambi/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["surround.nvim"] = {
-    loaded = true,
-    path = "/home/jambi/.local/share/nvim/site/pack/packer/start/surround.nvim",
-    url = "https://github.com/ur4ltz/surround.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

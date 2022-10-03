@@ -5,7 +5,7 @@ return require("packer").startup(function(use)
 
 	-- autopairs
 	use("windwp/nvim-autopairs")
-	use("ur4ltz/surround.nvim")
+	use("kylechui/nvim-surround")
 
 	-- comments
 	use("numToStr/Comment.nvim")
