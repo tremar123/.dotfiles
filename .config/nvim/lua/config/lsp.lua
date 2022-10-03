@@ -4,55 +4,6 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local lspconfig = require("lspconfig")
 
--- luasnip setup
-local luasnip = require("luasnip")
-require("luasnip.loaders.from_vscode").lazy_load()
-
--- nvim-cmp setup
-local cmp = require("cmp")
-cmp.setup({
-	snippet = {
-		expand = function(args)
-			require("luasnip").lsp_expand(args.body)
-		end,
-	},
-	mapping = {
-		["<C-p>"] = cmp.mapping.select_prev_item(),
-		["<C-n>"] = cmp.mapping.select_next_item(),
-		["<C-d>"] = cmp.mapping.scroll_docs(-4),
-		["<C-f>"] = cmp.mapping.scroll_docs(4),
-		["<C-Space>"] = cmp.mapping.complete(),
-		["<C-e>"] = cmp.mapping.close(),
-		["<CR>"] = cmp.mapping.confirm({
-			behavior = cmp.ConfirmBehavior.Replace,
-			select = true,
-		}),
-		["<Tab>"] = function(fallback)
-			if cmp.visible() then
-				cmp.select_next_item()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
-			else
-				fallback()
-			end
-		end,
-		["<S-Tab>"] = function(fallback)
-			if cmp.visible() then
-				cmp.select_prev_item()
-			elseif luasnip.jumpable(-1) then
-				luasnip.jump(-1)
-			else
-				fallback()
-			end
-		end,
-	},
-	sources = {
-		{ name = "nvim_lsp" },
-		{ name = "luasnip" },
-		{ name = "path" },
-	},
-})
-
 local signs = {
 	{ name = "DiagnosticSignError", text = "" },
 	{ name = "DiagnosticSignWarn", text = "" },
@@ -64,51 +15,76 @@ for _, sign in ipairs(signs) do
 	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
 
+local function on_attach()
+	vim.keymap.set("n", "gd", ":lua vim.lsp.buf.definition()<CR>", Keymap_opts)
+	vim.keymap.set("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lh", ":lua vim.lsp.buf.hover()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lws", ":lua vim.lsp.buf.workspace_symbol()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lf", ":lua vim.diagnostic.open_float()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>ln", ":lua vim.diagnostic.goto_next()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lp", ":lua vim.diagnostic.goto_prev()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lca", ":lua vim.lsp.buf.code_action()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lrr", ":lua vim.lsp.buf.references()<CR>", Keymap_opts)
+	vim.keymap.set("n", "<Leader>lrn", ":lua vim.lsp.buf.rename()<CR>", Keymap_opts)
+end
+
 lspconfig.html.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.tsserver.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.pyright.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.cssls.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.rust_analyzer.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.jsonls.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.gopls.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.prismals.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.tailwindcss.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.astro.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.eslint.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 })
 
 lspconfig.sumneko_lua.setup({
+	on_attach = on_attach,
 	capabilities = capabilities,
 	settings = {
 		Lua = {
@@ -119,6 +95,14 @@ lspconfig.sumneko_lua.setup({
 	},
 })
 
-lspconfig.dockerls.setup({})
+lspconfig.dockerls.setup({
+	on_attach = on_attach,
+})
 
-lspconfig.yamlls.setup({})
+lspconfig.yamlls.setup({
+	on_attach = on_attach,
+})
+
+lspconfig.ansiblels.setup({
+	on_attach = on_attach,
+})

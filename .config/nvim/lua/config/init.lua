@@ -1,8 +1,0 @@
-require("config.sets")
-require("config.keymap")
-require("config.lsp")
-require("config.lualine")
-require("config.treesitter")
-require("config.plugins")
-require("config.autopairs")
-require("config.comments")

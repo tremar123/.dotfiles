@@ -6,7 +6,6 @@ return require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-path")
-
 	--use 'williamboman/nvim-lsp-installer'
 
 	--snippets
@@ -43,6 +42,10 @@ return require("packer").startup(function(use)
 
 	-- lualine
 	use("nvim-lualine/lualine.nvim")
-
 	use("kyazdani42/nvim-web-devicons")
+
+	use("dstein64/vim-startuptime")
+	use("lewis6991/impatient.nvim")
+
+    use("pearofducks/ansible-vim")
 end)
