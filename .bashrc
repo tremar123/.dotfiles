@@ -1,4 +1,4 @@
-PS1='\e[1;35m\u@\H:\e[1;34m\w\n\e[1;37m$ '
+PS1='\[\e[0;1;35m\]\u@\H\[\e[0;94m\]:\w\n\[\e[0;97m\]$ '
 
 alias ls="ls --color"
 alias la="ls --color -a"
@@ -10,3 +10,4 @@ alias ...="cd ../.."
 alias ..="cd .."
 
 export EDITOR=nvim
+export TERM="xterm-256color"
