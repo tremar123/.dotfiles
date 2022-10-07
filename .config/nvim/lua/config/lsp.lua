@@ -97,12 +97,29 @@ lspconfig.sumneko_lua.setup({
 
 lspconfig.dockerls.setup({
 	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 lspconfig.yamlls.setup({
 	on_attach = on_attach,
+	capabilities = capabilities,
 })
 
 lspconfig.ansiblels.setup({
 	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		ansible = {
+            validation = {
+                lint = {
+                    enabled = false
+                }
+            }
+		},
+	},
+})
+
+lspconfig.clangd.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
 })
