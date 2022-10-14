@@ -28,6 +28,13 @@ function work {
     fi
 }
 
+function _work_comp {
+    local LS=ls
+    reply=(`$LS $HOME/work`)
+}
+
+compctl -K _work_comp work
+
 function p {
     if [ "$1" != "" ]; then
         cd "$HOME/personal/$1"
@@ -36,6 +43,13 @@ function p {
         ls
     fi
 }
+
+function _p_comp {
+    local LS=ls
+    reply=(`$LS $HOME/personal`)
+}
+
+compctl -K _p_comp p
 
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
@@ -51,21 +65,3 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
 export EDITOR=nvim
-
-function fcd() {
-    ignored=(".local" ".config/discord" "node_modules" ".cache" ".git" ".npm" ".npm-packages" ".gradle" ".java" ".android")
-
-    cmd="find $HOME $HOME/Development/ -type d"
-
-    for folder in "${ignored[@]}"
-    do
-        cmd+=" ! -path '*/$folder/*'"
-    done
-
-    selected_folder="$(eval $cmd | fzf)"
-
-    if [ "$selected_folder" != "" ];
-    then
-        cd $selected_folder
-    fi
-}

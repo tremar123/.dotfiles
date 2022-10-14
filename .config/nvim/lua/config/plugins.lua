@@ -24,6 +24,7 @@ return require("packer").startup(function(use)
 
 	-- treesitter
 	use("nvim-treesitter/nvim-treesitter") --, {'do': ':TSUpdate'}
+	use("nvim-treesitter/nvim-treesitter-context") --, {'do': ':TSUpdate'}
 	use("p00f/nvim-ts-rainbow")
 
 	-- autopairs
