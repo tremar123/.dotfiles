@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/jambi/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["document-color.nvim"] = {
+    loaded = true,
+    path = "/home/jambi/.local/share/nvim/site/pack/packer/start/document-color.nvim",
+    url = "https://github.com/mrshmllow/document-color.nvim"
+  },
   ["editorconfig-vim"] = {
     loaded = true,
     path = "/home/jambi/.local/share/nvim/site/pack/packer/start/editorconfig-vim",

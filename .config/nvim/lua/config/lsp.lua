@@ -15,7 +15,10 @@ for _, sign in ipairs(signs) do
 	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
 
-local function on_attach()
+local function on_attach(client)
+	if client.server_capabilities.colorProvider then
+		require("document-color").buf_attach()
+	end
 	vim.keymap.set("n", "gd", ":lua vim.lsp.buf.definition()<CR>", Keymap_opts)
 	vim.keymap.set("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", Keymap_opts)
 	vim.keymap.set("n", "<Leader>lh", ":lua vim.lsp.buf.hover()<CR>", Keymap_opts)
@@ -110,11 +113,11 @@ lspconfig.ansiblels.setup({
 	capabilities = capabilities,
 	settings = {
 		ansible = {
-            validation = {
-                lint = {
-                    enabled = false
-                }
-            }
+			validation = {
+				lint = {
+					enabled = false,
+				},
+			},
 		},
 	},
 })

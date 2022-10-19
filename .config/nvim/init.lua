@@ -1,5 +1,5 @@
+require("impatient")
 require("config.plugins")
-require('impatient')
 require("config.sets")
 require("config.keymap")
 require("config.lsp")

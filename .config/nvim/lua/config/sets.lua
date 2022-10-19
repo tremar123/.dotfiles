@@ -25,6 +25,7 @@ vim.opt.pumheight = 10
 vim.opt.signcolumn = "yes"
 vim.opt.hlsearch = false
 vim.opt.relativenumber = true
+vim.opt.termguicolors = true
 
 vim.cmd([[colorscheme gruvbox]])
 vim.api.nvim_set_hl(0, "Normal", { ctermbg = nil })

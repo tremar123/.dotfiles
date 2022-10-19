@@ -29,7 +29,7 @@ return require("packer").startup(function(use)
 
 	-- autopairs
 	use("windwp/nvim-autopairs")
-    use("kylechui/nvim-surround")
+	use("kylechui/nvim-surround")
 
 	-- comments
 	use("JoosepAlviste/nvim-ts-context-commentstring")
@@ -48,7 +48,9 @@ return require("packer").startup(function(use)
 	use("dstein64/vim-startuptime")
 	use("lewis6991/impatient.nvim")
 
-    use("pearofducks/ansible-vim")
+	use("pearofducks/ansible-vim")
 
-    use("editorconfig/editorconfig-vim")
+	use("editorconfig/editorconfig-vim")
+
+	use("mrshmllow/document-color.nvim")
 end)
