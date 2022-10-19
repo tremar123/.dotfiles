@@ -9,3 +9,6 @@ npairs.setup({
 })
 
 require("nvim-surround").setup()
+require("document-color").setup({
+	mode = "foreground",
+})
