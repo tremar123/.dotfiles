@@ -24,7 +24,6 @@ vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.pumheight = 10
 vim.opt.signcolumn = "yes"
 vim.opt.hlsearch = false
-vim.opt.exrc = true
 vim.opt.relativenumber = true
 
 vim.cmd([[colorscheme gruvbox]])
