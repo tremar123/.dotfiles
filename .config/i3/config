@@ -282,7 +282,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+e exec thunar
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/screenshots/"
 
-bindsym $mod+a exec discord, exec spotify, exec firefox, exec alacritty -e tmux
+bindsym $mod+a exec discord, exec spotify, exec firefox, exec alacritty
 
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles

@@ -53,4 +53,6 @@ return require("packer").startup(function(use)
 	use("editorconfig/editorconfig-vim")
 
 	use("mrshmllow/document-color.nvim")
+    
+    use("ThePrimeagen/vim-be-good")
 end)
