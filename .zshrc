@@ -18,6 +18,7 @@ alias vim="nvim"
 alias :q="exit"
 alias :Q="exit"
 alias ...="cd ../.."
+alias -- -="cd -"
 
 function work {
     if [ "$1" != "" ]; then
