@@ -16,7 +16,10 @@ return require("packer").startup(function(use)
 	use("mattn/emmet-vim")
 
 	-- color schemes
-	use("morhetz/gruvbox")
+	use("gruvbox-community/gruvbox")
+    use("catppuccin/nvim")
+    use("folke/tokyonight.nvim")
+    use("shaunsingh/nord.nvim")
 
 	-- telescope
 	use("nvim-lua/plenary.nvim")
@@ -53,6 +56,6 @@ return require("packer").startup(function(use)
 	use("editorconfig/editorconfig-vim")
 
 	use("mrshmllow/document-color.nvim")
-    
+
     use("ThePrimeagen/vim-be-good")
 end)
