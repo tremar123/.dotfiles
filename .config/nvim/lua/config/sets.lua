@@ -26,46 +26,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.hlsearch = false
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
-
-vim.g.nord_italic = false
-vim.g.nord_contrast = true
-vim.g.nord_bold = false
-
-require("catppuccin").setup({
-	styles = {
-		comments = {},
-		conditionals = {},
-		loops = {},
-		functions = {},
-		keywords = {},
-		strings = {},
-		variables = {},
-		numbers = {},
-		booleans = {},
-		properties = {},
-		types = {},
-		operators = {},
-	},
-	integrations = {
-		cmp = true,
-		telescope = true,
-		treesitter = true,
-		ts_rainbow = true,
-		-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
-	},
-})
-
-require("tokyonight").setup({
-	styles = {
-		comments = { italic = false },
-		keywords = { italic = false },
-		functions = { italic = false },
-		variables = { italic = false },
-	},
-})
-
-vim.cmd([[colorscheme gruvbox]])
-vim.api.nvim_set_hl(0, "Normal", { ctermbg = nil })
+vim.g.netrw_banner = 0
 
 vim.cmd([[
 let g:neoformat_try_node_exe = 1

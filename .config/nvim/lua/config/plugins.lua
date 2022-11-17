@@ -16,7 +16,8 @@ return require("packer").startup(function(use)
 	use("mattn/emmet-vim")
 
 	-- color schemes
-	use("gruvbox-community/gruvbox")
+	--[[ use("gruvbox-community/gruvbox") ]]
+    use("ellisonleao/gruvbox.nvim")
     use("catppuccin/nvim")
     use("folke/tokyonight.nvim")
     use("shaunsingh/nord.nvim")
