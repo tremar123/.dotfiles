@@ -68,7 +68,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 16
+    transparency = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -86,19 +86,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1
+    frame_width = 0
 
     # Defines color of the frame around the notification window.
-    # gruvbox
     # frame_color = "#504945"
-    # catppuccin - mocha
-    frame_color = "#6c7086"
-    # catppuccin - macchiato
-    # frame_color = "#6e738d"
-    # catppuccin - frappe
-    # frame_color = "#737994"
-    # catppuccin - latte
-    # frame_color = "#9ca0b0"
 
     # Define a color for the separator.
     # possible values are:
@@ -194,7 +185,7 @@
     ### Icons ###
 
     # Align icons left/right/off
-    icon_position = left
+    icon_position = off
 
     # Scale small icons up to this size, set to 0 to disable. Helpful
     # for e.g. small files or high-dpi screens. In case of conflict,
@@ -206,7 +197,7 @@
 
     # Paths to default icons.
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-    icon_path = /usr/share/icons/Qogir/16/status:/usr/share/icons/Qogir/16/devices/:/usr/share/icons/Qogir/16/apps/:/usr/share/pixmaps/
+    # icon_path = /usr/share/icons/Papirus/16/status:/usr/share/icons/Papirus/16/devices/:/usr/share/icons/Papirus/16/apps/:/usr/share/pixmaps/
 
     ### History ###
 
@@ -302,26 +293,103 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#504945"
-    foreground = "#ffffff"
+    
+    # gruvbox
+    # background = "#504945"
+    # foreground = "#ffffff"
+
+    # catppuccin - mocha
+    background = "#6c7086"
+    foreground = "#cdd6f4"
+
+    # catppuccin - macchiato
+    # background = "#6e738d"
+    # foreground = "#cad3f5"
+    
+    # catppuccin - frappe
+    # background = "#737994"
+    # foreground = "#c6d0f5"
+    
+    # catppuccin - latte
+    # background = "#9ca0b0"
+    # foreground = "#4c4f69"
+    
+    # nord
+    # background = "#8fbcbb"
+    # foreground = "#2e3440"
+    
+    # tokyonight
+    # background = ""
+    # foreground = ""
+
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-information.png
+    # icon = /usr/share/icons/Papirus/status/16/dialog-information.png
 
 [urgency_normal]
-    background = "#504945"
-    foreground = "#ffffff"
+    # gruvbox
+    # background = "#665c54"
+    # foreground = "#ffffff"
+
+    # catppuccin - mocha
+    background = "#6c7086"
+    foreground = "#cdd6f4"
+
+    # catppuccin - macchiato
+    # background = "#6e738d"
+    # foreground = "#cad3f5"
+    
+    # catppuccin - frappe
+    # background = "#737994"
+    # foreground = "#c6d0f5"
+    
+    # catppuccin - latte
+    # background = "#9ca0b0"
+    # foreground = "#4c4f69"
+    
+    # nord
+    # background = "#8fbcbb"
+    # foreground = "#2e3440"
+    
+    # tokyonight
+    # background = ""
+    # foreground = ""
+    
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-question.png
+    # icon = /usr/share/icons/Papirus/status/16/dialog-question.png
 
 [urgency_critical]
-    background = "#504945"
-    foreground = "#ffffff"
-    frame_color = "#ff7f7f"
+    # gruvbox
+    # background = "#cc241d"
+    # foreground = "#ffffff"
+
+    # catppuccin - mocha
+    background = "#f38ba8"
+    foreground = "#11111b"
+
+    # catppuccin - macchiato
+    # background = "#ed8796"
+    # foreground = "#181926"
+    
+    # catppuccin - frappe
+    # background = "#e78284"
+    # foreground = "#232634"
+    
+    # catppuccin - latte
+    # background = "#d20f39"
+    # foreground = "#dce0e8"
+    
+    # nord
+    # background = "#bf616a"
+    # foreground = "#2e3440"
+    
+    # tokyonight
+    # background = ""
+    # foreground = ""
     timeout = 120
     # Icon for notifications with critical urgency, uncomment to enable
-    icon = /usr/share/icons/Arc-X-D/status/16/dialog-warning.png
+    # icon = /usr/share/icons/Papirus/status/16/dialog-warning.png
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
@@ -439,8 +507,8 @@
 #    summary = *twitter.com*
 #    urgency = normal
 #
-[stack-volumes]
-    appname = "some_volume_notifiers"
-    set_stack_tag = "volume"
+# [stack-volumes]
+#     appname = "some_volume_notifiers"
+#     set_stack_tag = "volume"
 #
 # vim: ft=cfg
