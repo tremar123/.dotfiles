@@ -42,4 +42,4 @@ require("gruvbox").setup({
 	transparent_mode = true,
 })
 
-vim.cmd([[colorscheme catppuccin-latte]])
+vim.cmd([[colorscheme catppuccin-mocha]])

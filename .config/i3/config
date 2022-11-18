@@ -355,33 +355,60 @@ for_window [window_role="About"] floating enable
 # client.urgent            $urgentred	$urgentred	$white		$black		$yellowbrown
 
 # Catppuccin - latte
-set $Rosewater    #dc8a78
-set $Flamingo     #dd7878
-set $Pink         #ea76cb    
-set $Mauve        #8839ef    
-set $Red          #d20f39    
-set $Maroon       #e64553    
-set $Peach        #fe640b    
-set $Yellow       #df8e1d    
-set $Green        #40a02b    
-set $Teal         #179299    
-set $Sky          #04a5e5    
-set $Sapphire     #209fb5
-set $Blue         #1e66f5    
-set $Lavender     #7287fd
-set $Text         #4c4f69    
-set $Subtext1     #5c5f77
-set $Subtext0     #6c6f85
-set $Overlay2     #7c7f93
-set $Overlay1     #8c8fa1
-set $Overlay0     #9ca0b0
-set $Surface2     #acb0be
-set $Surface1     #bcc0cc
-set $Surface0     #ccd0da
-set $Base         #eff1f5    
-set $Mantle       #e6e9ef    
-set $Crust        #dce0e8
+# set $Rosewater    #dc8a78
+# set $Flamingo     #dd7878
+# set $Pink         #ea76cb
+# set $Mauve        #8839ef
+# set $Red          #d20f39
+# set $Maroon       #e64553
+# set $Peach        #fe640b
+# set $Yellow       #df8e1d
+# set $Green        #40a02b
+# set $Teal         #179299
+# set $Sky          #04a5e5
+# set $Sapphire     #209fb5
+# set $Blue         #1e66f5
+# set $Lavender     #7287fd
+# set $Text         #4c4f69
+# set $Subtext1     #5c5f77
+# set $Subtext0     #6c6f85
+# set $Overlay2     #7c7f93
+# set $Overlay1     #8c8fa1
+# set $Overlay0     #9ca0b0
+# set $Surface2     #acb0be
+# set $Surface1     #bcc0cc
+# set $Surface0     #ccd0da
+# set $Base         #eff1f5
+# set $Mantle       #e6e9ef
+# set $Crust        #dce0e8
+
 # Catppuccin - mocha
+set $Rosewater    #f5e0dc
+set $Flamingo     #f2cdcd
+set $Pink         #f5c2e7
+set $Mauve        #cba6f7
+set $Red          #f38ba8
+set $Maroon       #eba0ac
+set $Peach        #fab387
+set $Yellow       #f9e2af
+set $Green        #a6e3a1
+set $Teal         #94e2d5
+set $Sky          #89dceb
+set $Sapphire     #74c7ec
+set $Blue         #89b4fa
+set $Lavender     #b4befe
+set $Text         #cdd6f4
+set $Subtext1     #bac2de
+set $Subtext0     #a6adc8
+set $Overlay2     #9399b2
+set $Overlay1     #7f849c
+set $Overlay0     #6c7086
+set $Surface2     #585b70
+set $Surface1     #45475a
+set $Surface0     #313244
+set $Base         #1e1e2e
+set $Mantle       #181825
+set $Crust        #11111b
 
 # Catppuccin - macchiato
 
