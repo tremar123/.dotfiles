@@ -4,10 +4,14 @@ font:
     size: 14
 
 window:
-  opacity: 0.88
+  padding:
+    x: 8
+    y: 4
+  # opacity: 0.88
 
 schemes:
   gruvbox: &gruvbox
+    background_opacity: 0.88
     primary:
       background: "0x282828"
       foreground: "0xebdbb2"
@@ -420,4 +424,4 @@ schemes:
       - { index: 16, color: "#FE640B" }
       - { index: 17, color: "#DC8A78" }
 
-colors: *gruvbox
+colors: *catppuccin-latte
