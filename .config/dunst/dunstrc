@@ -89,7 +89,16 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#504945"
+    # gruvbox
+    # frame_color = "#504945"
+    # catppuccin - mocha
+    frame_color = "#6c7086"
+    # catppuccin - macchiato
+    # frame_color = "#6e738d"
+    # catppuccin - frappe
+    # frame_color = "#737994"
+    # catppuccin - latte
+    # frame_color = "#9ca0b0"
 
     # Define a color for the separator.
     # possible values are:
@@ -111,7 +120,7 @@
 
     ### Text ###
 
-    font = Noto Sans Regular 9
+    font = NotoSansMono Nerd Font Mono 9
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.

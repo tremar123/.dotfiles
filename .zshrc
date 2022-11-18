@@ -19,6 +19,7 @@ alias :q="exit"
 alias :Q="exit"
 alias ...="cd ../.."
 alias -- -="cd -"
+alias dotf="cd $HOME/.dotfiles"
 
 function work {
     if [ "$1" != "" ]; then
@@ -66,3 +67,6 @@ bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
 export EDITOR=nvim
+
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
