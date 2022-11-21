@@ -5,20 +5,7 @@ vim.g.nord_disable_background = true
 
 require("catppuccin").setup({
 	transparent_background = true,
-	styles = {
-		comments = {},
-		conditionals = {},
-		loops = {},
-		functions = {},
-		keywords = {},
-		strings = {},
-		variables = {},
-		numbers = {},
-		booleans = {},
-		properties = {},
-		types = {},
-		operators = {},
-	},
+	no_italic = true,
 	integrations = {
 		cmp = true,
 		telescope = true,
