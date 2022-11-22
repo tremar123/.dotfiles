@@ -1,6 +1,7 @@
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local lspconfig = require("lspconfig")
 
@@ -52,6 +53,7 @@ lspconfig.cssls.setup({
 })
 
 lspconfig.rust_analyzer.setup({
+	--[[ cmd = { "rustup", "run", "stable", "rust-analyzer" }, ]]
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
@@ -123,6 +125,21 @@ lspconfig.ansiblels.setup({
 })
 
 lspconfig.clangd.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.bashls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.awk_ls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
+lspconfig.sqlls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })

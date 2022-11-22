@@ -3,8 +3,16 @@ local luasnip = require("luasnip")
 require("luasnip.loaders.from_vscode").lazy_load()
 
 -- nvim-cmp setup
+local lspkind = require("lspkind")
 local cmp = require("cmp")
 cmp.setup({
+	formatting = {
+        format = function(entry, vim_item)
+			vim_item.kind = lspkind.presets.default[vim_item.kind]
+			vim_item.menu = ""
+			return vim_item
+		end,
+	},
 	snippet = {
 		expand = function(args)
 			require("luasnip").lsp_expand(args.body)
