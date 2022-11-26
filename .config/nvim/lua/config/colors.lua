@@ -5,12 +5,17 @@ vim.g.nord_disable_background = true
 
 require("catppuccin").setup({
 	transparent_background = true,
+	term_colors = true,
 	no_italic = true,
 	integrations = {
+        gitsigns = true,
 		cmp = true,
 		telescope = true,
 		treesitter = true,
 		ts_rainbow = true,
+		native_lsp = {
+			enabled = true,
+		},
 	},
 })
 
@@ -30,3 +35,4 @@ require("gruvbox").setup({
 })
 
 vim.cmd([[colorscheme catppuccin-mocha]])
+--[[ vim.api.nvim_set_hl(0, "Normal", { ctermbg = nil }) ]]

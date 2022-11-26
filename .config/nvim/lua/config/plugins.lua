@@ -6,7 +6,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-path")
-    use("onsails/lspkind-nvim")
+	use("onsails/lspkind-nvim")
 	--use 'williamboman/nvim-lsp-installer'
 
 	--snippets
@@ -18,10 +18,10 @@ return require("packer").startup(function(use)
 
 	-- color schemes
 	--[[ use("gruvbox-community/gruvbox") ]]
-    use("ellisonleao/gruvbox.nvim")
-    use("catppuccin/nvim")
-    use("folke/tokyonight.nvim")
-    use("shaunsingh/nord.nvim")
+	use("ellisonleao/gruvbox.nvim")
+	use("catppuccin/nvim")
+	use("folke/tokyonight.nvim")
+	use("shaunsingh/nord.nvim")
 
 	-- telescope
 	use("nvim-lua/plenary.nvim")
@@ -42,6 +42,11 @@ return require("packer").startup(function(use)
 
 	-- git
 	use("tpope/vim-fugitive")
+	use("lewis6991/gitsigns.nvim")
+
+    -- dap
+    use("mfussenegger/nvim-dap")
+    use("rcarriga/nvim-dap-ui")
 
 	-- formatter
 	use("sbdchd/neoformat")
@@ -59,5 +64,5 @@ return require("packer").startup(function(use)
 
 	use("mrshmllow/document-color.nvim")
 
-    use("ThePrimeagen/vim-be-good")
+	use("ThePrimeagen/vim-be-good")
 end)
