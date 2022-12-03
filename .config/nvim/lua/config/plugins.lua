@@ -47,6 +47,7 @@ return require("packer").startup(function(use)
     -- dap
     use("mfussenegger/nvim-dap")
     use("rcarriga/nvim-dap-ui")
+    use("theHamsta/nvim-dap-virtual-text")
 
 	-- formatter
 	use("sbdchd/neoformat")

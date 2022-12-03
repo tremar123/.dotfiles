@@ -53,3 +53,18 @@ vim.keymap.set("n", "<Leader>gts", ":Gitsigns toggle_signs<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>gtl", ":Gitsigns toggle_linehl<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>gtd", ":Gitsigns toggle_word_diff<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>gtb", ":Gitsigns toggle_current_line_blame<CR>", Keymap_opts)
+
+-- debuggin
+vim.keymap.set("n", "<F5>", ":lua require('dap').continue()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F10>", ":lua require('dap').step_over()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F11>", ":lua require('dap').step_into()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F12>", ":lua require('dap').step_out()<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>b", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
+vim.keymap.set(
+	"n",
+	"<Leader>B",
+	":lua require('dap').set_breakpoint(vim.fn.input('Break condition: '))<CR>",
+	Keymap_opts
+)
+vim.keymap.set("n", "<Leader>dr", ":lua require('dap').repl.open()<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>dd", ":lua require('dapui').open()<CR>", Keymap_opts)

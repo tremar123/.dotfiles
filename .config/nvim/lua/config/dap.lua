@@ -164,3 +164,5 @@ require("dapui").setup({
 		max_value_lines = 100, -- Can be integer or nil.
 	},
 })
+
+require("nvim-dap-virtual-text").setup()
