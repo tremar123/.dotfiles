@@ -45,7 +45,6 @@ vim.keymap.set("n", "<Leader>gf", ":diffget //2<CR>", Keymap_opts)
 -- Neoformat
 vim.keymap.set("n", "<Leader>n", ":Neoformat <CR>", Keymap_opts)
 
--- increase number
 vim.keymap.set("i", "<C-c>", "<Esc>", Keymap_opts)
 
 -- git signs
@@ -55,10 +54,10 @@ vim.keymap.set("n", "<Leader>gtd", ":Gitsigns toggle_word_diff<CR>", Keymap_opts
 vim.keymap.set("n", "<Leader>gtb", ":Gitsigns toggle_current_line_blame<CR>", Keymap_opts)
 
 -- debuggin
-vim.keymap.set("n", "<F5>", ":lua require('dap').continue()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F8>", ":lua require('dap').continue()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F10>", ":lua require('dap').step_over()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F11>", ":lua require('dap').step_into()<CR>", Keymap_opts)
-vim.keymap.set("n", "<F12>", ":lua require('dap').step_out()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>b", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
 vim.keymap.set(
 	"n",
@@ -68,3 +67,6 @@ vim.keymap.set(
 )
 vim.keymap.set("n", "<Leader>dr", ":lua require('dap').repl.open()<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>dd", ":lua require('dapui').open()<CR>", Keymap_opts)
+
+-- tabs
+vim.keymap.set("n", "<Leader>t", ":tabnew<CR>", Keymap_opts)

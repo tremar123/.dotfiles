@@ -1,3 +1,8 @@
+local function getArgs()
+	local input = vim.fn.input("Args: ")
+	return vim.split(input, " ", true)
+end
+
 local dap = require("dap")
 dap.adapters.lldb = {
 	type = "executable",
@@ -15,7 +20,7 @@ dap.configurations.cpp = {
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,
-		args = {},
+		args = getArgs,
 	},
 }
 -- If you want to use this for Rust and C, add something like this:
@@ -78,7 +83,7 @@ dap.configurations.sh = {
 		pathBash = "/bin/bash",
 		pathMkfifo = "mkfifo",
 		pathPkill = "pkill",
-		args = {},
+		args = getArgs,
 		env = {},
 		terminalKind = "integrated",
 	},
