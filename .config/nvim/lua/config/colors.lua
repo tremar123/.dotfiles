@@ -8,7 +8,7 @@ require("catppuccin").setup({
 	term_colors = true,
 	no_italic = true,
 	integrations = {
-        gitsigns = true,
+		gitsigns = true,
 		cmp = true,
 		telescope = true,
 		treesitter = true,
@@ -34,5 +34,5 @@ require("gruvbox").setup({
 	transparent_mode = true,
 })
 
-vim.cmd([[colorscheme catppuccin-mocha]])
+vim.cmd([[colorscheme nord]])
 --[[ vim.api.nvim_set_hl(0, "Normal", { ctermbg = nil }) ]]

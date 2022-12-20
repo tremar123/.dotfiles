@@ -96,8 +96,8 @@ per_monitor_dpi = false
 # foreground = "#ffffff"
 
 # catppuccin - mocha
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+# background = "#1E1E2E"
+# foreground = "#CDD6F4"
 
 # catppuccin - macchiato
 # background = "#6e738d"
@@ -112,8 +112,8 @@ foreground = "#CDD6F4"
 # foreground = "#4c4f69"
 
 # nord
-# background = "#8fbcbb"
-# foreground = "#2e3440"
+background = "#8fbcbb"
+foreground = "#2e3440"
 
 # tokyonight
 # background = ""
@@ -129,8 +129,8 @@ timeout = 5
 # foreground = "#ffffff"
 
 # catppuccin - mocha
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+# background = "#6c7086"
+# foreground = "#CDD6F4"
 
 # catppuccin - macchiato
 # background = "#6e738d"
@@ -145,8 +145,8 @@ foreground = "#CDD6F4"
 # foreground = "#4c4f69"
 
 # nord
-# background = "#8fbcbb"
-# foreground = "#2e3440"
+background = "#8fbcbb"
+foreground = "#2e3440"
 
 # tokyonight
 # background = ""
@@ -162,9 +162,9 @@ timeout = 5
 # foreground = "#ffffff"
 
 # catppuccin - mocha
-background = "#1E1E2E"
-foreground = "#CDD6F4"
-frame_color = "#FAB387"
+# background = "#1E1E2E"
+# foreground = "#CDD6F4"
+# frame_color = "#FAB387"
 
 # catppuccin - macchiato
 # background = "#ed8796"
@@ -179,8 +179,8 @@ frame_color = "#FAB387"
 # foreground = "#dce0e8"
 
 # nord
-# background = "#bf616a"
-# foreground = "#2e3440"
+background = "#bf616a"
+foreground = "#2e3440"
 
 # tokyonight
 # background = ""

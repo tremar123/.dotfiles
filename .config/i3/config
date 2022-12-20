@@ -382,33 +382,33 @@ for_window [window_role="About"] floating enable
 # set $Mantle       #e6e9ef
 # set $Crust        #dce0e8
 
-# Catppuccin - mocha
-set $Rosewater    #f5e0dc
-set $Flamingo     #f2cdcd
-set $Pink         #f5c2e7
-set $Mauve        #cba6f7
-set $Red          #f38ba8
-set $Maroon       #eba0ac
-set $Peach        #fab387
-set $Yellow       #f9e2af
-set $Green        #a6e3a1
-set $Teal         #94e2d5
-set $Sky          #89dceb
-set $Sapphire     #74c7ec
-set $Blue         #89b4fa
-set $Lavender     #b4befe
-set $Text         #cdd6f4
-set $Subtext1     #bac2de
-set $Subtext0     #a6adc8
-set $Overlay2     #9399b2
-set $Overlay1     #7f849c
-set $Overlay0     #6c7086
-set $Surface2     #585b70
-set $Surface1     #45475a
-set $Surface0     #313244
-set $Base         #1e1e2e
-set $Mantle       #181825
-set $Crust        #11111b
+# # Catppuccin - mocha
+# set $Rosewater    #f5e0dc
+# set $Flamingo     #f2cdcd
+# set $Pink         #f5c2e7
+# set $Mauve        #cba6f7
+# set $Red          #f38ba8
+# set $Maroon       #eba0ac
+# set $Peach        #fab387
+# set $Yellow       #f9e2af
+# set $Green        #a6e3a1
+# set $Teal         #94e2d5
+# set $Sky          #89dceb
+# set $Sapphire     #74c7ec
+# set $Blue         #89b4fa
+# set $Lavender     #b4befe
+# set $Text         #cdd6f4
+# set $Subtext1     #bac2de
+# set $Subtext0     #a6adc8
+# set $Overlay2     #9399b2
+# set $Overlay1     #7f849c
+# set $Overlay0     #6c7086
+# set $Surface2     #585b70
+# set $Surface1     #45475a
+# set $Surface0     #313244
+# set $Base         #1e1e2e
+# set $Mantle       #181825
+# set $Crust        #11111b
 
 # Catppuccin - macchiato
 # set $Rosewater    #f4dbd6
@@ -466,35 +466,35 @@ set $Crust        #11111b
 # set $Mantle       #292c3c
 # set $Crust        #232634
 
-#class		        	border		bground		text		indicator	child_border
-client.focused          $Base       $Base       $Text       $Sapphire   $Lavender
-client.unfocused        $Surface0   $Surface0   $Subtext1   $Base       $Base
-client.focused_inactive $Overlay0   $Overlay0   $Subtext1   $Base       $Base
-client.urgent           $Red        $Red        $Base       $Base       $Lavender
+# #class		        	border		bground		text		indicator	child_border
+# client.focused          $Base       $Base       $Text       $Sapphire   $Lavender
+# client.unfocused        $Surface0   $Surface0   $Subtext1   $Base       $Base
+# client.focused_inactive $Overlay0   $Overlay0   $Subtext1   $Base       $Base
+# client.urgent           $Red        $Red        $Base       $Base       $Lavender
 
 # Nord
-# set $nord0       #2e3440
-# set $nord1       #3b4252
-# set $nord2       #434c5e
-# set $nord3       #4c566a
-# set $nord4       #d8dee9
-# set $nord5       #e5e9f0
-# set $nord6       #eceff4
-# set $nord7       #8fbcbb
-# set $nord8       #88c0d0
-# set $nord9       #81a1c1
-# set $nord10      #5e81ac
-# set $nord11      #bf616a
-# set $nord12      #d08770
-# set $nord13      #ebcb8b
-# set $nord14      #a3be8c
-# set $nord15      #b48ead
+set $nord0       #2e3440
+set $nord1       #3b4252
+set $nord2       #434c5e
+set $nord3       #4c566a
+set $nord4       #d8dee9
+set $nord5       #e5e9f0
+set $nord6       #eceff4
+set $nord7       #8fbcbb
+set $nord8       #88c0d0
+set $nord9       #81a1c1
+set $nord10      #5e81ac
+set $nord11      #bf616a
+set $nord12      #d08770
+set $nord13      #ebcb8b
+set $nord14      #a3be8c
+set $nord15      #b48ead
 
-#class		        	border		bground		text		indicator	child_border
-# client.focused          $nord0      $nord0      $nord6      $nord9       $nord10
-# client.unfocused        $nord2      $nord2      $nord5      $nord0       $nord0
-# client.focused_inactive $nord3      $nord3      $nord5      $nord0       $nord0
-# client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
+# class		        	border		bground		text		indicator	child_border
+client.focused          $nord0      $nord0      $nord6      $nord9       $nord10
+client.unfocused        $nord2      $nord2      $nord5      $nord0       $nord0
+client.focused_inactive $nord3      $nord3      $nord5      $nord0       $nord0
+client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
 
 # Tokyonight
 
@@ -528,29 +528,29 @@ bar {
     #     urgent_workspace      $urgentred        $urgentred    $white        $purple
     # }
 
-    # Catppuccin
-    colors {
-        separator           $Mauve
-        background          $Base
-        statusline          $Text
-                            # border    bg          txt         indicator
-        focused_workspace   $Text       $Text       $Base       $Mauve
-        active_workspace    $Lavender   $Flamingo   $Overlay0   $Mauve
-        inactive_workspace  $Base       $Base       $Text       $Mauve
-        urgent_workspace    $Red        $Red        $Base       $Mauve
-    }
+    # # Catppuccin
+    # colors {
+    #     separator           $Mauve
+    #     background          $Base
+    #     statusline          $Text
+    #                         # border    bg          txt         indicator
+    #     focused_workspace   $Text       $Text       $Base       $Mauve
+    #     active_workspace    $Lavender   $Flamingo   $Overlay0   $Mauve
+    #     inactive_workspace  $Base       $Base       $Text       $Mauve
+    #     urgent_workspace    $Red        $Red        $Base       $Mauve
+    # }
 
     # Nord
-    # colors {
-    #     separator           $nord15
-    #     background          $nord0
-    #     statusline          $nord6
-    #                         # border    bg          txt         indicator
-    #     focused_workspace   $nord6      $nord6      $nord0      $nord15
-    #     active_workspace    $nord10     $nord12     $nord3      $nord15
-    #     inactive_workspace  $nord0      $nord0      $nord6      $nord15
-    #     urgent_workspace    $nord11     $nord11     $nord0      $nord15
-    # }
+    colors {
+        separator           $nord15
+        background          $nord0
+        statusline          $nord6
+                            # border    bg          txt         indicator
+        focused_workspace   $nord6      $nord6      $nord0      $nord15
+        active_workspace    $nord10     $nord12     $nord3      $nord15
+        inactive_workspace  $nord0      $nord0      $nord6      $nord15
+        urgent_workspace    $nord11     $nord11     $nord0      $nord15
+    }
 }
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
