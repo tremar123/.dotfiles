@@ -1,5 +1,0 @@
-require("config.sets")
-require("config.keymap")
-require("config.plugins")
-require("config.after_plugins")
-require("config.autopairs")
