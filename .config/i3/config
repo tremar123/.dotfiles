@@ -491,8 +491,8 @@ set $nord14      #a3be8c
 set $nord15      #b48ead
 
 # class		        	border		bground		text		indicator	child_border
-client.focused          $nord0      $nord0      $nord6      $nord9       $nord10
-client.unfocused        $nord2      $nord2      $nord5      $nord0       $nord0
+client.focused          $nord10      $nord10      $nord6      $nord9       $nord10
+client.unfocused        $nord0      $nord0      $nord5      $nord0       $nord0
 client.focused_inactive $nord3      $nord3      $nord5      $nord0       $nord0
 client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
 
@@ -504,54 +504,54 @@ client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available)
-bar {
-    status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    position bottom
-    tray_output primary
-    tray_padding 0
-
-    # When strip_workspace_numbers is set to yes,
-    # any workspace that has a name of the form
-    # “[n][:][NAME]” will display only the name.
-    strip_workspace_numbers yes
-    ##strip_workspace_name no
-
-    # Gruvbox
-    # colors {
-    #     separator           $purple
-    #     background          $darkgrey
-    #     statusline          $white
-    #     # border              bg                txt           indicator
-    #     focused_workspace     $mediumgrey       $grey         $darkgrey     $purple
-    #     active_workspace      $lightblue        $mediumgrey   $darkgrey     $purple
-    #     inactive_workspace    $darkgrey         $darkgrey     $grey         $purple
-    #     urgent_workspace      $urgentred        $urgentred    $white        $purple
-    # }
-
-    # # Catppuccin
-    # colors {
-    #     separator           $Mauve
-    #     background          $Base
-    #     statusline          $Text
-    #                         # border    bg          txt         indicator
-    #     focused_workspace   $Text       $Text       $Base       $Mauve
-    #     active_workspace    $Lavender   $Flamingo   $Overlay0   $Mauve
-    #     inactive_workspace  $Base       $Base       $Text       $Mauve
-    #     urgent_workspace    $Red        $Red        $Base       $Mauve
-    # }
-
-    # Nord
-    colors {
-        separator           $nord15
-        background          $nord0
-        statusline          $nord6
-                            # border    bg          txt         indicator
-        focused_workspace   $nord6      $nord6      $nord0      $nord15
-        active_workspace    $nord10     $nord12     $nord3      $nord15
-        inactive_workspace  $nord0      $nord0      $nord6      $nord15
-        urgent_workspace    $nord11     $nord11     $nord0      $nord15
-    }
-}
+# bar {
+#     status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#     position bottom
+#     tray_output primary
+#     tray_padding 0
+#
+#     # When strip_workspace_numbers is set to yes,
+#     # any workspace that has a name of the form
+#     # “[n][:][NAME]” will display only the name.
+#     strip_workspace_numbers yes
+#     ##strip_workspace_name no
+#
+#     # Gruvbox
+#     # colors {
+#     #     separator           $purple
+#     #     background          $darkgrey
+#     #     statusline          $white
+#     #     # border              bg                txt           indicator
+#     #     focused_workspace     $mediumgrey       $grey         $darkgrey     $purple
+#     #     active_workspace      $lightblue        $mediumgrey   $darkgrey     $purple
+#     #     inactive_workspace    $darkgrey         $darkgrey     $grey         $purple
+#     #     urgent_workspace      $urgentred        $urgentred    $white        $purple
+#     # }
+#
+#     # # Catppuccin
+#     # colors {
+#     #     separator           $Mauve
+#     #     background          $Base
+#     #     statusline          $Text
+#     #                         # border    bg          txt         indicator
+#     #     focused_workspace   $Text       $Text       $Base       $Mauve
+#     #     active_workspace    $Lavender   $Flamingo   $Overlay0   $Mauve
+#     #     inactive_workspace  $Base       $Base       $Text       $Mauve
+#     #     urgent_workspace    $Red        $Red        $Base       $Mauve
+#     # }
+#
+#     # Nord
+#     colors {
+#         separator           $nord15
+#         background          $nord0
+#         statusline          $nord6
+#                             # border    bg          txt         indicator
+#         focused_workspace   $nord6      $nord6      $nord0      $nord15
+#         active_workspace    $nord10     $nord12     $nord3      $nord15
+#         inactive_workspace  $nord0      $nord0      $nord6      $nord15
+#         urgent_workspace    $nord11     $nord11     $nord0      $nord15
+#     }
+# }
 
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 bindsym $mod+d exec rofi -modi drun -show drun
@@ -564,3 +564,5 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 
 # exit-menu
 bindsym $mod+Shift+e exec ~/.config/i3/scripts/powermenu
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
