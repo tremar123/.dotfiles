@@ -12,7 +12,7 @@ return require("packer").startup(function(use)
 	--snippets
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
-	use("rafamadriz/friendly-snippets")
+	--[[ use("rafamadriz/friendly-snippets") ]]
 	use("mattn/emmet-vim")
 
 	-- color schemes
@@ -27,8 +27,8 @@ return require("packer").startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 
 	-- treesitter
-	use("nvim-treesitter/nvim-treesitter") --, {'do': ':TSUpdate'}
-	use("nvim-treesitter/nvim-treesitter-context") --, {'do': ':TSUpdate'}
+	use("nvim-treesitter/nvim-treesitter")
+	use("nvim-treesitter/nvim-treesitter-context")
 	use("p00f/nvim-ts-rainbow")
 
 	-- autopairs
