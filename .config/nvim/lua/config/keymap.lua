@@ -35,6 +35,7 @@ vim.keymap.set("n", "x", '"_x', Keymap_opts)
 vim.keymap.set("n", "<C-p>", ":Telescope git_files previewer=false theme=dropdown<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>f", ":Telescope live_grep<CR>", Keymap_opts)
 vim.keymap.set("n", "gr", ":Telescope lsp_references<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>k", ":Telescope keymaps<CR>", Keymap_opts)
 
 -- fugitive vim.keymap.set
 vim.keymap.set("n", "<Leader>gs", ":G <CR>", Keymap_opts)

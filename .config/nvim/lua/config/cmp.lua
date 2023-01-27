@@ -7,7 +7,7 @@ local lspkind = require("lspkind")
 local cmp = require("cmp")
 cmp.setup({
 	formatting = {
-        format = function(entry, vim_item)
+		format = function(entry, vim_item)
 			vim_item.kind = lspkind.presets.default[vim_item.kind]
 			vim_item.menu = ""
 			return vim_item
@@ -53,4 +53,17 @@ cmp.setup({
 		{ name = "luasnip" },
 		{ name = "path" },
 	},
+})
+
+local unlinkgrp = vim.api.nvim_create_augroup("UnlinkSnippetOnModeChange", { clear = true })
+
+vim.api.nvim_create_autocmd("ModeChanged", {
+	group = unlinkgrp,
+	pattern = { "s:n", "i:*" },
+	desc = "Forget the current snippet when leaving the insert mode",
+	callback = function(evt)
+		if luasnip.session and luasnip.session.current_nodes[evt.buf] and not luasnip.session.jump_active then
+			luasnip.unlink_current()
+		end
+	end,
 })
