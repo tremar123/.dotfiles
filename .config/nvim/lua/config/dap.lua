@@ -43,6 +43,7 @@ dap.configurations.go = {
 		name = "Debug",
 		request = "launch",
 		program = "${file}",
+		args = getArgs,
 	},
 	{
 		type = "delve",
