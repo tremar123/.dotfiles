@@ -1,6 +1,5 @@
 Keymap_opts = { noremap = true, silent = true }
 
-vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.cmd(":command! -bar -bang Q quit<bang>")

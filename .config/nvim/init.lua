@@ -1,13 +1,5 @@
-require("impatient")
-require("config.plugins")
+vim.g.mapleader = " "
+
+require("config.lazy")
 require("config.sets")
 require("config.keymap")
-require("config.lsp")
-require("config.cmp")
-require("config.lualine")
-require("config.treesitter")
-require("config.autopairs")
-require("config.comments")
-require("config.git")
-require("config.dap")
-require("config.colors")

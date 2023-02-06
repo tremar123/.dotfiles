@@ -28,13 +28,13 @@ vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.g.netrw_banner = 0
 
+vim.g.neoformat_try_node_exe = 1
+vim.g.neoformat_enabled_yaml = { "prettier" }
+
 vim.cmd([[
-let g:neoformat_try_node_exe = 1
-let g:neoformat_enabled_yaml = ["prettier"]
 filetype plugin on
 filetype indent plugin on
 autocmd BufRead,BufEnter *.astro set filetype=astro
 
-let g:user_emmet_install_global = 0
-autocmd FileType html,php,astro,javascript,javascriptreact,typescript,typescriptreact EmmetInstall
+colorscheme nord
 ]])

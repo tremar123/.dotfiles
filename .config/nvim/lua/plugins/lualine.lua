@@ -15,25 +15,33 @@ local function trunc(trunc_width, trunc_len, hide_width, no_ellipsis)
 	end
 end
 
-require("lualine").setup({
-	options = {
-		icons_enabled = true,
-		theme = "auto",
+return {
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			"kyazdani42/nvim-web-devicons",
+		},
+		opts = {
+			options = {
+				icons_enabled = true,
+				theme = "auto",
+			},
+			sections = {
+				lualine_a = { "mode" },
+				lualine_b = { { "branch", fmt = trunc(70, 4, 70, true) }, "diff", "diagnostics" },
+				lualine_c = { "filename" },
+				lualine_x = { "filetype" },
+				lualine_y = { { "progress", fmt = trunc(70, 4, 75, true) } },
+				lualine_z = { "location" },
+			},
+			inactive_sections = {
+				lualine_a = {},
+				lualine_b = {},
+				lualine_c = { "filename" },
+				lualine_x = { "filetype", "location" },
+				lualine_y = {},
+				lualine_z = {},
+			},
+		},
 	},
-	sections = {
-		lualine_a = { "mode" },
-		lualine_b = { { "branch", fmt = trunc(70, 4, 70, true) }, "diff", "diagnostics" },
-		lualine_c = { "filename" },
-		lualine_x = { "filetype" },
-		lualine_y = { { "progress", fmt = trunc(70, 4, 75, true) } },
-		lualine_z = { "location" },
-	},
-	inactive_sections = {
-		lualine_a = {},
-		lualine_b = {},
-		lualine_c = { "filename" },
-		lualine_x = { "filetype", "location" },
-		lualine_y = {},
-		lualine_z = {},
-	},
-})
+}
