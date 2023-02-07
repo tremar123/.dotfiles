@@ -149,6 +149,7 @@ return {
 			lspconfig.omnisharp.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
+				cmd = { "dotnet", vim.fn.stdpath("data") .. "/mason/packages/omnisharp/OmniSharp.dll" },
 			})
 		end,
 	},

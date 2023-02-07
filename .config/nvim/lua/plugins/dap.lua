@@ -103,6 +103,24 @@ return {
 				},
 			}
 
+			dap.adapters.coreclr = {
+				type = "executable",
+				command = "netcoredbg",
+				args = { "--interpreter=vscode" },
+			}
+
+			dap.configurations.cs = {
+				{
+					type = "coreclr",
+					name = "launch - netcoredbg",
+					request = "launch",
+					program = function()
+						return vim.fn.input("Path to dll", vim.fn.getcwd() .. "/bin/Debug/", "file")
+					end,
+					args = getArgs,
+				},
+			}
+
 			require("dapui").setup({
 				icons = { expanded = "", collapsed = "", current_frame = "" },
 				mappings = {

@@ -22,6 +22,7 @@ return {
 					"java-test",
 					"debugpy",
 					"bash-debug-adapter",
+					"netcoredbg",
 				},
 				run_on_start = false,
 			})
