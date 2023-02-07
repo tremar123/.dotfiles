@@ -49,4 +49,5 @@ return {
 			end,
 		},
 	},
+	{ "mfussenegger/nvim-jdtls", ft = { "java" } },
 }
