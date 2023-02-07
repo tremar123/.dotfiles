@@ -4,7 +4,7 @@ return {
 		dependencies = {
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 		},
-		event = "VeryLazy",
+        priority = 60,
 		config = function()
 			require("mason").setup()
 			require("mason-tool-installer").setup({
