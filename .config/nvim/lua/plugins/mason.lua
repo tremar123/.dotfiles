@@ -2,27 +2,43 @@ return {
 	{
 		"williamboman/mason.nvim",
 		dependencies = {
-			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 		},
+		event = "VeryLazy",
 		config = function()
 			require("mason").setup()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "jdtls" },
-				automatic_installation = true,
-			})
 			require("mason-tool-installer").setup({
 				ensure_installed = {
-					"stylua",
-					"prettier",
-					"delve",
+					"ansible-language-server",
+					"astro-language-server",
 					"autopep8",
+					"awk-language-server",
+					"bash-debug-adapter",
+					"bash-language-server",
+					"clangd",
 					"codelldb",
+					"css-lsp",
+					"debugpy",
+					"delve",
+					"dockerfile-language-server",
+					"eslint-lsp",
+					"gopls",
+					"html-lsp",
 					"java-debug-adapter",
 					"java-test",
-					"debugpy",
-					"bash-debug-adapter",
+					"jdtls",
+					"json-lsp",
+					"lua-language-server",
 					"netcoredbg",
+					"omnisharp",
+					"prettier",
+					"prisma-language-server",
+					"pyright",
+					"rust-analyzer",
+					"stylua",
+					"tailwindcss-language-server",
+					"typescript-language-server",
+					"yaml-language-server",
 				},
 				run_on_start = false,
 			})

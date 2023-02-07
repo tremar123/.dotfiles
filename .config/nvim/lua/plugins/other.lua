@@ -1,8 +1,9 @@
 return {
-	"sbdchd/neoformat",
+	{ "sbdchd/neoformat", event = "VeryLazy" },
 	"editorconfig/editorconfig-vim",
 	{
 		"kylechui/nvim-surround",
+		event = "VeryLazy",
 		config = function()
 			require("nvim-surround").setup()
 		end,
@@ -26,7 +27,7 @@ return {
 
 	{
 		"pearofducks/ansible-vim",
-		ft = "yaml",
+		ft = "yaml.ansible",
 	},
 
 	{
