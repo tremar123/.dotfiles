@@ -4,8 +4,8 @@ return {
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
 		},
+		priority = 40,
 		config = function()
-			-- Add additional capabilities supported by nvim-cmp
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 			capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -142,6 +142,11 @@ return {
 			})
 
 			lspconfig.awk_ls.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
+			lspconfig.omnisharp.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
 			})

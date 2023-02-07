@@ -1,7 +1,12 @@
 return {
 	"sbdchd/neoformat",
 	"editorconfig/editorconfig-vim",
-	"kylechui/nvim-surround",
+	{
+		"kylechui/nvim-surround",
+		config = function()
+			require("nvim-surround").setup()
+		end,
+	},
 
 	"nvim-lua/plenary.nvim",
 	"nvim-telescope/telescope.nvim",

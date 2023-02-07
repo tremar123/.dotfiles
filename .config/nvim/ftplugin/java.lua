@@ -35,10 +35,8 @@ local config = {
 	end,
 	init_options = {
 		bundles = {
-			vim.fn.glob(
-				"~/.java/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.44.0.jar",
-				1
-			),
+			vim.fn.glob(vim.fn.stdpath("data") .. "/mason/packages/java-debug-adapter/extension/server/*.jar", 1),
+			vim.fn.glob(vim.fn.stdpath("data") .. "/mason/packages/java-test/extension/server/*.jar", 1),
 		},
 	},
 }
