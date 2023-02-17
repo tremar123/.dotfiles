@@ -256,7 +256,7 @@ assign [class="Alacritty"] $ws1
 assign [class="(?i)firefox"] $ws2
 assign [class="discord"] $ws3
 assign [class="Thunar"] $ws5
-assign [class="DesktopEditors"] $ws6
+assign [class="ONLYOFFICE Desktop Editors"] $ws6
 assign [class="Blender"] $ws7
 assign [class="Gimp"] $ws7
 assign [class="Inkscape"] $ws7
@@ -269,7 +269,7 @@ for_window [class=(?i)firefox] focus
 for_window [class="Spotify"] move container to workspace $ws4 focus
 for_window [class=Thunar] focus
 for_window [class=Blender] focus
-for_window [class=DesktopEditors] focus
+for_window [class="ONLYOFFICE Desktop Editors"] focus
 for_window [class=Gimp] focus
 for_window [class=Inkscape] focus
 for_window [class=Virt-manager] focus
@@ -439,62 +439,62 @@ for_window [window_role="About"] floating enable
 # set $Crust        #181926
 
 # Catppuccin - frappe
-# set $Rosewater    #f2d5cf
-# set $Flamingo     #eebebe
-# set $Pink         #f4b8e4
-# set $Mauve        #ca9ee6
-# set $Red          #e78284
-# set $Maroon       #ea999c
-# set $Peach        #ef9f76
-# set $Yellow       #e5c890
-# set $Green        #a6d189
-# set $Teal         #81c8be
-# set $Sky          #99d1db
-# set $Sapphire     #85c1dc
-# set $Blue         #8caaee
-# set $Lavender     #babbf1
-# set $Text         #c6d0f5
-# set $Subtext1     #b5bfe2
-# set $Subtext0     #a5adce
-# set $Overlay2     #949cbb
-# set $Overlay1     #838ba7
-# set $Overlay0     #737994
-# set $Surface2     #626880
-# set $Surface1     #51576d
-# set $Surface0     #414559
-# set $Base         #303446
-# set $Mantle       #292c3c
-# set $Crust        #232634
+set $Rosewater    #f2d5cf
+set $Flamingo     #eebebe
+set $Pink         #f4b8e4
+set $Mauve        #ca9ee6
+set $Red          #e78284
+set $Maroon       #ea999c
+set $Peach        #ef9f76
+set $Yellow       #e5c890
+set $Green        #a6d189
+set $Teal         #81c8be
+set $Sky          #99d1db
+set $Sapphire     #85c1dc
+set $Blue         #8caaee
+set $Lavender     #babbf1
+set $Text         #c6d0f5
+set $Subtext1     #b5bfe2
+set $Subtext0     #a5adce
+set $Overlay2     #949cbb
+set $Overlay1     #838ba7
+set $Overlay0     #737994
+set $Surface2     #626880
+set $Surface1     #51576d
+set $Surface0     #414559
+set $Base         #303446
+set $Mantle       #292c3c
+set $Crust        #232634
 
-# #class		        	border		bground		text		indicator	child_border
-# client.focused          $Base       $Base       $Text       $Sapphire   $Lavender
-# client.unfocused        $Surface0   $Surface0   $Subtext1   $Base       $Base
-# client.focused_inactive $Overlay0   $Overlay0   $Subtext1   $Base       $Base
-# client.urgent           $Red        $Red        $Base       $Base       $Lavender
+#class		        	border		bground		text		indicator	child_border
+client.focused          $Base       $Base       $Text       $Sapphire   $Lavender
+client.unfocused        $Crust      $Crust      $Subtext1   $Base       $Base
+client.focused_inactive $Overlay0   $Overlay0   $Subtext1   $Base       $Base
+client.urgent           $Red        $Red        $Base       $Base       $Lavender
 
 # Nord
-set $nord0       #2e3440
-set $nord1       #3b4252
-set $nord2       #434c5e
-set $nord3       #4c566a
-set $nord4       #d8dee9
-set $nord5       #e5e9f0
-set $nord6       #eceff4
-set $nord7       #8fbcbb
-set $nord8       #88c0d0
-set $nord9       #81a1c1
-set $nord10      #5e81ac
-set $nord11      #bf616a
-set $nord12      #d08770
-set $nord13      #ebcb8b
-set $nord14      #a3be8c
-set $nord15      #b48ead
-
-# class		        	border		bground		text		indicator	child_border
-client.focused          $nord10      $nord10      $nord6      $nord9       $nord10
-client.unfocused        $nord0      $nord0      $nord5      $nord0       $nord0
-client.focused_inactive $nord3      $nord3      $nord5      $nord0       $nord0
-client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
+# set $nord0       #2e3440
+# set $nord1       #3b4252
+# set $nord2       #434c5e
+# set $nord3       #4c566a
+# set $nord4       #d8dee9
+# set $nord5       #e5e9f0
+# set $nord6       #eceff4
+# set $nord7       #8fbcbb
+# set $nord8       #88c0d0
+# set $nord9       #81a1c1
+# set $nord10      #5e81ac
+# set $nord11      #bf616a
+# set $nord12      #d08770
+# set $nord13      #ebcb8b
+# set $nord14      #a3be8c
+# set $nord15      #b48ead
+#
+# # class		        	border		bground		text		indicator	child_border
+# client.focused          $nord10      $nord10      $nord6      $nord9       $nord10
+# client.unfocused        $nord0      $nord0      $nord5      $nord0       $nord0
+# client.focused_inactive $nord3      $nord3      $nord5      $nord0       $nord0
+# client.urgent           $nord11     $nord11     $nord0      $nord0       $nord10
 
 # Tokyonight
 

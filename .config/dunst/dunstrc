@@ -104,16 +104,16 @@ per_monitor_dpi = false
 # foreground = "#cad3f5"
 
 # catppuccin - frappe
-# background = "#737994"
-# foreground = "#c6d0f5"
+background = "#ca9ee6"
+foreground = "#232634"
 
 # catppuccin - latte
 # background = "#9ca0b0"
 # foreground = "#4c4f69"
 
 # nord
-background = "#8fbcbb"
-foreground = "#2e3440"
+# background = "#8fbcbb"
+# foreground = "#2e3440"
 
 # tokyonight
 # background = ""
@@ -137,16 +137,16 @@ timeout = 5
 # foreground = "#cad3f5"
 
 # catppuccin - frappe
-# background = "#737994"
-# foreground = "#c6d0f5"
+background = "#ca9ee6"
+foreground = "#232634"
 
 # catppuccin - latte
 # background = "#9ca0b0"
 # foreground = "#4c4f69"
 
 # nord
-background = "#8fbcbb"
-foreground = "#2e3440"
+# background = "#8fbcbb"
+# foreground = "#2e3440"
 
 # tokyonight
 # background = ""
@@ -171,16 +171,16 @@ timeout = 5
 # foreground = "#181926"
 
 # catppuccin - frappe
-# background = "#e78284"
-# foreground = "#232634"
+background = "#e78284"
+foreground = "#232634"
 
 # catppuccin - latte
 # background = "#d20f39"
 # foreground = "#dce0e8"
 
 # nord
-background = "#bf616a"
-foreground = "#2e3440"
+# background = "#bf616a"
+# foreground = "#2e3440"
 
 # tokyonight
 # background = ""

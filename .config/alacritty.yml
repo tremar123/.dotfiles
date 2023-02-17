@@ -421,4 +421,4 @@ schemes:
       - { index: 16, color: "#FE640B" }
       - { index: 17, color: "#DC8A78" }
 
-colors: *nord
+colors: *catppuccin-frappe

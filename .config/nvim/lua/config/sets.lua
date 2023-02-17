@@ -36,5 +36,5 @@ filetype plugin on
 filetype indent plugin on
 autocmd BufRead,BufEnter *.astro set filetype=astro
 
-colorscheme nord
+colorscheme catppuccin-frappe
 ]])
