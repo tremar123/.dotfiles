@@ -18,8 +18,7 @@ vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
-vim.opt.scrolloff = 6
-vim.opt.sidescrolloff = 15
+vim.opt.scrolloff = 6 vim.opt.sidescrolloff = 15
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.pumheight = 10
 vim.opt.signcolumn = "yes"

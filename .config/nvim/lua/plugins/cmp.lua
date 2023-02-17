@@ -64,6 +64,15 @@ return {
 					{ name = "luasnip" },
 					{ name = "path" },
 				},
+				--[[ window = { ]]
+				--[[ 	documentation = { ]]
+				--[[ 		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" }, ]]
+				--[[ 	}, ]]
+				--[[ 	completion = { ]]
+				--[[ 		border = { "┌", "─", "┐", "│", "┘", "─", "└", "│" }, ]]
+				--[[ 		winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None", ]]
+				--[[ 	}, ]]
+				--[[ }, ]]
 			})
 
 			local unlinkgrp = vim.api.nvim_create_augroup("UnlinkSnippetOnModeChange", { clear = true })

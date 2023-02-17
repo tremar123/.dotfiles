@@ -18,6 +18,13 @@ return {
 				transparent_background = true,
 				term_colors = true,
 				no_italic = true,
+				custom_highlights = function(colors)
+					return {
+						NormalFloat = { bg = colors.crust },
+						Pmenu = { bg = colors.crust },
+						PmenuSel = { fg = colors.text, bg = colors.surface0, style = { "bold" } },
+					}
+				end,
 				integrations = {
 					gitsigns = true,
 					cmp = true,
