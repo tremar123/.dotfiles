@@ -258,6 +258,7 @@ assign [class="discord"] $ws3
 assign [class="Thunar"] $ws5
 assign [class="ONLYOFFICE Desktop Editors"] $ws6
 assign [class="Blender"] $ws7
+assign [class="Darktable"] $ws7
 assign [class="Gimp"] $ws7
 assign [class="Inkscape"] $ws7
 assign [class="Virt-manager"] $ws8
@@ -266,10 +267,11 @@ assign [class="Virt-manager"] $ws8
 for_window [class=Alacritty] focus
 for_window [class=(?i)firefox] focus
 #for_window [class=discord] focus
-for_window [class="Spotify"] move container to workspace $ws4 focus
+for_window [class="Spotify"] move container to workspace $ws4
 for_window [class=Thunar] focus
-for_window [class=Blender] focus
 for_window [class="ONLYOFFICE Desktop Editors"] focus
+for_window [class=Blender] focus
+for_window [class=Darktable] focus
 for_window [class=Gimp] focus
 for_window [class=Inkscape] focus
 for_window [class=Virt-manager] focus
@@ -411,60 +413,60 @@ for_window [window_role="About"] floating enable
 # set $Crust        #11111b
 
 # Catppuccin - macchiato
-# set $Rosewater    #f4dbd6
-# set $Flamingo     #f0c6c6
-# set $Pink         #f5bde6
-# set $Mauve        #c6a0f6
-# set $Red          #ed8796
-# set $Maroon       #ee99a0
-# set $Peach        #f5a97f
-# set $Yellow       #eed49f
-# set $Green        #a6da95
-# set $Teal         #8bd5ca
-# set $Sky          #91d7e3
-# set $Sapphire     #7dc4e4
-# set $Blue         #8aadf4
-# set $Lavender     #b7bdf8
-# set $Text         #cad3f5
-# set $Subtext1     #b8c0e0
-# set $Subtext0     #a5adcb
-# set $Overlay2     #939ab7
-# set $Overlay1     #8087a2
-# set $Overlay0     #6e738d
-# set $Surface2     #5b6078
-# set $Surface1     #494d64
-# set $Surface0     #363a4f
-# set $Base         #24273a
-# set $Mantle       #1e2030
-# set $Crust        #181926
+set $Rosewater    #f4dbd6
+set $Flamingo     #f0c6c6
+set $Pink         #f5bde6
+set $Mauve        #c6a0f6
+set $Red          #ed8796
+set $Maroon       #ee99a0
+set $Peach        #f5a97f
+set $Yellow       #eed49f
+set $Green        #a6da95
+set $Teal         #8bd5ca
+set $Sky          #91d7e3
+set $Sapphire     #7dc4e4
+set $Blue         #8aadf4
+set $Lavender     #b7bdf8
+set $Text         #cad3f5
+set $Subtext1     #b8c0e0
+set $Subtext0     #a5adcb
+set $Overlay2     #939ab7
+set $Overlay1     #8087a2
+set $Overlay0     #6e738d
+set $Surface2     #5b6078
+set $Surface1     #494d64
+set $Surface0     #363a4f
+set $Base         #24273a
+set $Mantle       #1e2030
+set $Crust        #181926
 
 # Catppuccin - frappe
-set $Rosewater    #f2d5cf
-set $Flamingo     #eebebe
-set $Pink         #f4b8e4
-set $Mauve        #ca9ee6
-set $Red          #e78284
-set $Maroon       #ea999c
-set $Peach        #ef9f76
-set $Yellow       #e5c890
-set $Green        #a6d189
-set $Teal         #81c8be
-set $Sky          #99d1db
-set $Sapphire     #85c1dc
-set $Blue         #8caaee
-set $Lavender     #babbf1
-set $Text         #c6d0f5
-set $Subtext1     #b5bfe2
-set $Subtext0     #a5adce
-set $Overlay2     #949cbb
-set $Overlay1     #838ba7
-set $Overlay0     #737994
-set $Surface2     #626880
-set $Surface1     #51576d
-set $Surface0     #414559
-set $Base         #303446
-set $Mantle       #292c3c
-set $Crust        #232634
+# set $Rosewater    #f2d5cf
+# set $Flamingo     #eebebe
+# set $Pink         #f4b8e4
+# set $Mauve        #ca9ee6
+# set $Red          #e78284
+# set $Maroon       #ea999c
+# set $Peach        #ef9f76
+# set $Yellow       #e5c890
+# set $Green        #a6d189
+# set $Teal         #81c8be
+# set $Sky          #99d1db
+# set $Sapphire     #85c1dc
+# set $Blue         #8caaee
+# set $Lavender     #babbf1
+# set $Text         #c6d0f5
+# set $Subtext1     #b5bfe2
+# set $Subtext0     #a5adce
+# set $Overlay2     #949cbb
+# set $Overlay1     #838ba7
+# set $Overlay0     #737994
+# set $Surface2     #626880
+# set $Surface1     #51576d
+# set $Surface0     #414559
+# set $Base         #303446
+# set $Mantle       #292c3c
+# set $Crust        #232634
 
 #class		        	border		bground		text		indicator	child_border
 client.focused          $Base       $Base       $Text       $Sapphire   $Lavender

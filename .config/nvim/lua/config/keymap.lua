@@ -66,7 +66,7 @@ vim.keymap.set(
 	Keymap_opts
 )
 vim.keymap.set("n", "<Leader>dr", ":lua require('dap').repl.open()<CR>", Keymap_opts)
-vim.keymap.set("n", "<Leader>dd", ":lua require('dapui').open()<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>dd", ":lua require('dapui').toggle()<CR>", Keymap_opts)
 
 -- tabs
 vim.keymap.set("n", "<Leader>t", ":tabnew<CR>", Keymap_opts)

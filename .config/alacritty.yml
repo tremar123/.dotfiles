@@ -4,7 +4,7 @@ font:
     size: 14
 
 window:
-  opacity: 0.88
+  opacity: 0.90
 
 schemes:
   gruvbox: &gruvbox
@@ -421,4 +421,4 @@ schemes:
       - { index: 16, color: "#FE640B" }
       - { index: 17, color: "#DC8A78" }
 
-colors: *catppuccin-frappe
+colors: *catppuccin-macchiato
