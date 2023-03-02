@@ -5,6 +5,9 @@ vim.g.maplocalleader = " "
 vim.cmd(":command! -bar -bang Q quit<bang>")
 vim.cmd(":command W w")
 
+-- insert single char
+vim.keymap.set("n", "<C-i>", '"=nr2char(getchar())<cr>P', Keymap_opts)
+
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", Keymap_opts)
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", Keymap_opts)
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", Keymap_opts)
