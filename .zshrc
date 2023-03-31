@@ -9,7 +9,7 @@ zstyle :compinstall filename "$HOME/.zshrc"
 autoload -Uz compinit
 compinit
 
-PS1='%F{green}%~ %F{foreground}$ %F{foreground}'
+PS1='%F{blue}%~ %F{foreground}$ %F{foreground}'
 
 alias ls="ls --color"
 alias la="ls --color -a"

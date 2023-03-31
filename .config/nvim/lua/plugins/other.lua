@@ -9,8 +9,21 @@ return {
 		end,
 	},
 
-	"nvim-lua/plenary.nvim",
-	"nvim-telescope/telescope.nvim",
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		config = function()
+			require("telescope").setup({
+				defaults = {
+					file_ignore_patterns = {
+                        -- i want to ignore images by file extension, but have no idea how to do it in lua regexp
+					},
+				},
+			})
+		end,
+	},
 
 	{
 		"mattn/emmet-vim",

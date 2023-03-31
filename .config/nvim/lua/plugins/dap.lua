@@ -5,6 +5,7 @@ return {
 		dependencies = {
 			"rcarriga/nvim-dap-ui",
 			"theHamsta/nvim-dap-virtual-text",
+			"leoluz/nvim-dap-go",
 		},
 		config = function()
 			local function getArgs()
@@ -38,41 +39,6 @@ return {
 			-- If you want to use this for Rust and C, add something like this:
 			dap.configurations.c = dap.configurations.cpp
 			dap.configurations.rust = dap.configurations.cpp
-
-			dap.adapters.delve = {
-				type = "server",
-				port = "${port}",
-				executable = {
-					command = "dlv",
-					args = { "dap", "-l", "127.0.0.1:${port}" },
-				},
-			}
-
-			-- https://github.com/go-delve/delve/blob/master/Documentation/usage/dlv_dap.md
-			dap.configurations.go = {
-				{
-					type = "delve",
-					name = "Debug",
-					request = "launch",
-					program = "${file}",
-					args = getArgs,
-				},
-				{
-					type = "delve",
-					name = "Debug test", -- configuration for debugging test files
-					request = "launch",
-					mode = "test",
-					program = "${file}",
-				},
-				-- works with go.mod packages and sub packages
-				{
-					type = "delve",
-					name = "Debug test (go.mod)",
-					request = "launch",
-					mode = "test",
-					program = "./${relativeFileDirname}",
-				},
-			}
 
 			dap.adapters.bashdb = {
 				type = "executable",
@@ -201,6 +167,8 @@ return {
 					max_value_lines = 100, -- Can be integer or nil.
 				},
 			})
+
+			require("dap-go").setup()
 
 			require("nvim-dap-virtual-text").setup()
 		end,
