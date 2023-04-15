@@ -73,3 +73,5 @@ vim.keymap.set("n", "<Leader>dd", ":lua require('dapui').toggle()<CR>", Keymap_o
 
 -- tabs
 vim.keymap.set("n", "<Leader>t", ":tabnew<CR>", Keymap_opts)
+
+vim.keymap.set("n", "<Leader>u", ":UndotreeToggle<CR>", Keymap_opts)

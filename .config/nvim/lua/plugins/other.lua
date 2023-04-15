@@ -18,7 +18,7 @@ return {
 			require("telescope").setup({
 				defaults = {
 					file_ignore_patterns = {
-                        -- i want to ignore images by file extension, but have no idea how to do it in lua regexp
+						-- i want to ignore images by file extension, but have no idea how to do it in lua regexp
 					},
 				},
 			})
@@ -69,4 +69,5 @@ return {
 		},
 	},
 	{ "mfussenegger/nvim-jdtls", ft = { "java" } },
+	{ "mbbill/undotree", event = "VeryLazy" },
 }
