@@ -18,7 +18,7 @@ return {
 				type = "server",
 				port = "${port}",
 				executable = {
-					command = "codelldb", -- adjust as needed, must be absolute path
+					command = "codelldb",
 					args = { "--port", "${port}" },
 				},
 			}
