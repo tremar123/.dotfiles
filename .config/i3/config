@@ -280,7 +280,7 @@ for_window [class=Virt-manager] focus
 
 # compositor
 
-exec_always --no-startup-id picom -b --experimental-backends
+exec_always --no-startup-id picom -b
 
 #############################################
 # autostart applications/services on login: #
