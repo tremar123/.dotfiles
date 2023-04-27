@@ -3,7 +3,7 @@
 window#waybar {
   transition: background-color 1s;
   color: @text;
-  background-color: alpha(@base, 0.9);
+  background-color: alpha(@crust, 0.90);
 }
 
 window#waybar.hidden {
@@ -20,7 +20,7 @@ tooltip {
 .modules-right {
   border: 6px solid transparent;
   border-radius: 15px;
-  background-color: @crust;
+  background-color: @base;
 }
 
 button {
@@ -58,11 +58,11 @@ button {
 #backlight,
 #battery,
 #tray {
-  padding: 0 12px 0 2px;
+  padding: 0 15px 0 6px;
 }
 
 #clock {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 #custom-media {
@@ -71,6 +71,10 @@ button {
 
 #pulseaudio {
   color: @teal;
+}
+
+.modules-right > *:nth-child(1) > #pulseaudio {
+  padding-left: 15px;
 }
 
 #memory {
@@ -93,7 +97,7 @@ button {
   color: @flamingo;
 }
 
-#battery.warning {
+#battery {
   color: @crust;
   background-color: @yellow;
 }
