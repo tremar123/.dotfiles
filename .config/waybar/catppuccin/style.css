@@ -1,0 +1,125 @@
+@import "macchiato.css";
+
+window#waybar {
+  transition: background-color 1s;
+  color: @text;
+  background-color: alpha(@base, 0.9);
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background-color: @mantle;
+  color: @text;
+}
+
+#workspaces,
+.modules-center,
+.modules-right {
+  border: 6px solid transparent;
+  border-radius: 15px;
+  background-color: @crust;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+}
+
+#workspaces button {
+  font-size: 20px;
+  padding: 0 10px 0 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  color: @text;
+}
+
+#workspaces button:hover {
+  background-color: @surface1;
+}
+
+#workspaces button.active {
+  background-color: @surface0;
+  color: @flamingo;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+}
+
+#custom-media,
+#pulseaudio,
+#memory,
+#cpu,
+#temperature,
+#backlight,
+#battery,
+#tray {
+  padding: 0 12px 0 2px;
+}
+
+#clock {
+  padding: 0 10px;
+}
+
+#custom-media {
+  color: @green;
+}
+
+#pulseaudio {
+  color: @teal;
+}
+
+#memory {
+  color: @sapphire;
+}
+
+#cpu {
+  color: @blue;
+}
+
+#temperature {
+  color: @mauve;
+}
+
+#backlight {
+  color: @pink;
+}
+
+#battery {
+  color: @flamingo;
+}
+
+#battery.warning {
+  color: @crust;
+  background-color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @crust;
+  background-color: @red;
+}
+
+#tray {
+  color: @sky;
+  padding-left: 10px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #eb4d4b;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}

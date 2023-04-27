@@ -6,15 +6,17 @@
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/workspaces", "hyprland/submap"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/media", "pulseaudio", "memory", "cpu", "temperature", "backlight", "battery", "keyboard-state", "tray"],
+    "modules-right": ["custom/media", "pulseaudio", "memory", "cpu", "temperature", "backlight", "battery", "tray"],
 
     // Modules configuration
     "wlr/workspaces": {
         "disable-scroll": false,
         "all-outputs": true,
         "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
         "format": "{icon}",
         "format-icons": {
             "1": "",
@@ -30,6 +32,10 @@
             "focused": "",
             "default": ""
         }
+    },
+    "hyprland/submap": {
+        "format": "{}",
+        "max-length": 8,
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -48,8 +54,8 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-bluetooth": "{volume}% ",
+        "format-bluetooth-muted": "{icon} ",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -59,7 +65,10 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-click-right": "amixer sset Master toggle",
+        "on-scroll-up": "amixer -D pulse sset Master 5%+",
+        "on-scroll-down": "amixer -D pulse sset Master 5%-"
     },
     "memory": {
         "format": "{}% "
@@ -84,25 +93,16 @@
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 60,
+            "critical": 30
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 󱐋{icon}",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
     },
     "tray": {
         // "icon-size": 21,
