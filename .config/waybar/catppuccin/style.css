@@ -3,7 +3,7 @@
 window#waybar {
   transition: background-color 1s;
   color: @text;
-  background-color: alpha(@crust, 0.90);
+  background-color: alpha(@crust, 0.95);
 }
 
 window#waybar.hidden {
@@ -19,7 +19,7 @@ tooltip {
 .modules-center,
 .modules-right {
   border: 6px solid transparent;
-  border-radius: 15px;
+  border-radius: 16px;
   background-color: @base;
 }
 
@@ -42,7 +42,7 @@ button {
 }
 
 #workspaces button.active {
-  background-color: @surface0;
+  /* background-color: @surface0; */
   color: @flamingo;
 }
 
@@ -58,11 +58,11 @@ button {
 #backlight,
 #battery,
 #tray {
-  padding: 0 15px 0 6px;
+  padding: 3px 15px 3px 6px;
 }
 
 #clock {
-  padding: 0 15px;
+  padding: 3px 15px;
 }
 
 #custom-media {
@@ -97,7 +97,7 @@ button {
   color: @flamingo;
 }
 
-#battery {
+#battery.warning {
   color: @crust;
   background-color: @yellow;
 }
