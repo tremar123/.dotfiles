@@ -38,6 +38,8 @@ button {
 }
 
 #workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
   background-color: @surface1;
 }
 
