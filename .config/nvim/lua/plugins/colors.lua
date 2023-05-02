@@ -20,9 +20,8 @@ return {
 				no_italic = true,
 				custom_highlights = function(colors)
 					return {
-						NormalFloat = { bg = colors.crust },
-						Pmenu = { bg = colors.crust },
-						PmenuSel = { fg = colors.text, bg = colors.surface0, style = { "bold" } },
+						NormalFloat = { bg = colors.base },
+						Pmenu = { bg = colors.base },
 					}
 				end,
 				integrations = {
@@ -53,10 +52,23 @@ return {
 		},
 	},
 
-	{ "ellisonleao/gruvbox.nvim", lazy = true, opts = {
-		italic = false,
-		transparent_mode = true,
-	} },
+	{
+		"ellisonleao/gruvbox.nvim",
+		lazy = true,
+		opts = {
+			italic = {
+				strings = false,
+				operators = false,
+				comments = false,
+				fold = false,
+			},
+			transparent_mode = true,
+            overrides = {
+                NormalFloat = { bg = "#3c3836" },
+                Pmenu = { bg = "#3c3836" },
+            }
+		},
+	},
 
 	{ "mrshmllow/document-color.nvim", lazy = true, opts = {
 		mode = "foreground",

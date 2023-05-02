@@ -1,4 +1,4 @@
-font pango: NotoSansMono Nerd Font Mono 10
+font pango: NotoSansM Nerd Font 10
 
 set $mod Mod4
 
@@ -315,6 +315,9 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 # alternative if you installed aside with XFCE4:
 # exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+# blue light filter
+exec --no-startup-id gammastep
 
 ##################
 # floating rules #

@@ -72,7 +72,7 @@
         "on-scroll-down": "amixer -D pulse sset Master 5%-"
     },
     "memory": {
-        "format": "{:2}% "
+        "format": "{:2}% 󰍛"
     },
     "cpu": {
         "format": "{usage:2}% ",

@@ -36,4 +36,6 @@ filetype indent plugin on
 autocmd BufRead,BufEnter *.astro set filetype=astro
 
 colorscheme catppuccin-macchiato
+highlight Normal ctermbg=none guibg=none
+highlight NonText ctermbg=none guibg=none
 ]])
