@@ -69,7 +69,8 @@
         "on-click": "pavucontrol",
         "on-click-right": "amixer sset Master toggle",
         "on-scroll-up": "amixer -D pulse sset Master 5%+",
-        "on-scroll-down": "amixer -D pulse sset Master 5%-"
+        "on-scroll-down": "amixer -D pulse sset Master 5%-",
+        "smooth-scrolling-threshold": 5.0
     },
     "memory": {
         "format": "{:2}% 󰍛"
@@ -90,7 +91,10 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-scroll-up": "light -A 10",
+        "on-scroll-down": "light -U 10",
+        "smooth-scrolling-threshold": 5.0
     },
     "battery": {
         "states": {
