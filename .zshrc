@@ -1,10 +1,11 @@
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt autocd
 bindkey -v
 
 zstyle :compinstall filename "$HOME/.zshrc"
+zstyle ':completion:*' menu select
 
 autoload -Uz compinit
 compinit

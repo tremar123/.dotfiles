@@ -14,7 +14,7 @@ vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", Keymap_opts)
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", Keymap_opts)
 
 -- open explorer
-vim.keymap.set("n", "<Leader>e", ":Lex 30<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>", Keymap_opts)
 
 -- buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", Keymap_opts)

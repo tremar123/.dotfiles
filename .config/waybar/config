@@ -55,6 +55,7 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
+        "format-muted": " 0% 󰝟",
         "format-bluetooth": "{volume}% ",
         "format-bluetooth-muted": "{icon} ",
         "format-icons": {
@@ -70,7 +71,7 @@
         "on-click-right": "amixer sset Master toggle",
         "on-scroll-up": "amixer -D pulse sset Master 5%+",
         "on-scroll-down": "amixer -D pulse sset Master 5%-",
-        "smooth-scrolling-threshold": 5.0
+        "scroll-step": 5
     },
     "memory": {
         "format": "{:2}% 󰍛"

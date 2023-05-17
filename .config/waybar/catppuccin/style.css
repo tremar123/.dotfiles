@@ -18,7 +18,7 @@ tooltip {
 #workspaces,
 .modules-center,
 .modules-right {
-  border: 6px solid transparent;
+  border: 7px solid transparent;
   border-radius: 16px;
   background-color: @base;
 }
@@ -60,11 +60,11 @@ button {
 #backlight,
 #battery,
 #tray {
-  padding: 3px 15px 3px 6px;
+  padding: 2px 15px 2px 6px;
 }
 
 #clock {
-  padding: 3px 15px;
+  padding: 2px 15px;
 }
 
 #custom-media {

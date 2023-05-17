@@ -70,4 +70,10 @@ return {
 	},
 	{ "mfussenegger/nvim-jdtls", ft = { "java" } },
 	{ "mbbill/undotree", event = "VeryLazy" },
+	{
+		"nvim-tree/nvim-tree.lua",
+		config = function()
+			require("nvim-tree").setup()
+		end,
+	},
 }
