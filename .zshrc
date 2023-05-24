@@ -21,6 +21,7 @@ alias :Q="exit"
 alias ...="cd ../.."
 alias -- -="cd -"
 alias dotf="cd $HOME/.dotfiles"
+alias ssha="eval $(ssh-agent)"
 
 function work {
     if [ "$1" != "" ]; then

@@ -73,7 +73,36 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		config = function()
-			require("nvim-tree").setup()
+			require("nvim-tree").setup({
+				filters = {
+					custom = { "^.git$" },
+				},
+			})
+		end,
+	},
+	{
+		"akinsho/bufferline.nvim",
+		config = function()
+			local bufferline = require("bufferline")
+			bufferline.setup({
+				options = {
+					offsets = {
+						{
+							filetype = "NvimTree",
+                            highlight = "NONE",
+						},
+					},
+					always_show_bufferline = false,
+					diagnostics = "nvim_lsp",
+					indicator = {
+						style = "none",
+					},
+					style_preset = bufferline.style_preset.no_italic,
+					separator_style = { "", "" },
+					color_icons = true,
+				},
+			})
+            vim.cmd('highlight BufferLineFill guibg=NONE ctermbg=NONE')
 		end,
 	},
 }
