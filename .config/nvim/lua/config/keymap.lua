@@ -19,6 +19,7 @@ vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>", Keymap_opts)
 -- buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", Keymap_opts)
 vim.keymap.set("n", "<S-h>", ":bprev<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>bd", ":bd<CR>", Keymap_opts)
 
 -- visual - change indent
 vim.keymap.set("v", "<", "<gv", Keymap_opts)
@@ -61,7 +62,7 @@ vim.keymap.set("n", "<F8>", ":lua require('dap').continue()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F10>", ":lua require('dap').step_over()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F11>", ":lua require('dap').step_into()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
-vim.keymap.set("n", "<Leader>b", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>db", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
 vim.keymap.set(
 	"n",
 	"<Leader>B",

@@ -65,6 +65,8 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/go/bin"
 
+export PATH="$PATH:/opt/astap"
+
 # up arrow completes command from history
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward

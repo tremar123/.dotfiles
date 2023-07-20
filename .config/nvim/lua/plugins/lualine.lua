@@ -26,12 +26,12 @@ return {
 			options = {
 				icons_enabled = true,
 				theme = "auto",
-                globalstatus = true,
+				globalstatus = true,
 			},
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { { "branch", fmt = trunc(70, 4, 70, true) }, "diff", "diagnostics" },
-				lualine_c = { "filename" },
+				lualine_c = { { "filename", path = 1 } },
 				lualine_x = { "filetype" },
 				lualine_y = { { "progress", fmt = trunc(70, 4, 75, true) } },
 				lualine_z = { "location" },
