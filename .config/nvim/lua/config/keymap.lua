@@ -6,6 +6,7 @@ vim.cmd(":command! -bar -bang Q quit<bang>")
 vim.cmd(":command W w")
 
 -- insert single char
+-- please somebody explain why this works with pressing TAB!
 vim.keymap.set("n", "<C-i>", '"=nr2char(getchar())<cr>P', Keymap_opts)
 
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", Keymap_opts)
@@ -58,10 +59,12 @@ vim.keymap.set("n", "<Leader>gtd", ":Gitsigns toggle_word_diff<CR>", Keymap_opts
 vim.keymap.set("n", "<Leader>gtb", ":Gitsigns toggle_current_line_blame<CR>", Keymap_opts)
 
 -- debuggin
+vim.keymap.set("n", "<F5>", ":lua require('dap').restart()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F8>", ":lua require('dap').continue()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F10>", ":lua require('dap').step_over()<CR>", Keymap_opts)
-vim.keymap.set("n", "<F11>", ":lua require('dap').step_into()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F12>", ":lua require('dap').terminate()<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>db", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
 vim.keymap.set(
 	"n",

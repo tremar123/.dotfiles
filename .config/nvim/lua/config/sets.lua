@@ -18,7 +18,8 @@ vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.splitbelow = true
 vim.opt.splitright = true
-vim.opt.scrolloff = 6 vim.opt.sidescrolloff = 15
+vim.opt.scrolloff = 6
+vim.opt.sidescrolloff = 15
 vim.opt.completeopt = { "menu", "menuone", "noselect" }
 vim.opt.pumheight = 10
 vim.opt.signcolumn = "yes"
@@ -29,6 +30,8 @@ vim.g.netrw_banner = 0
 
 vim.g.neoformat_try_node_exe = 1
 vim.g.neoformat_enabled_yaml = { "prettier" }
+
+vim.g.neoformat_c_clangformat = { exe = "clang-format", args = { '--style="{IndentWidth: 4}"' } }
 
 vim.cmd([[
 filetype plugin on
