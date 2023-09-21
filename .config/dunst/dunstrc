@@ -100,16 +100,16 @@ per_monitor_dpi = false
 # foreground = "#CDD6F4"
 
 # catppuccin - macchiato
-background = "#c6a0f6"
-foreground = "#181926"
+#background = "#c6a0f6"
+#foreground = "#181926"
 
 # catppuccin - frappe
 # background = "#ca9ee6"
 # foreground = "#232634"
 
 # catppuccin - latte
-# background = "#9ca0b0"
-# foreground = "#4c4f69"
+background = "#9ca0b0"
+foreground = "#4c4f69"
 
 # nord
 # background = "#8fbcbb"
@@ -133,16 +133,16 @@ timeout = 5
 # foreground = "#CDD6F4"
 
 # catppuccin - macchiato
-background = "#c6a0f6"
-foreground = "#181926"
+#background = "#c6a0f6"
+#foreground = "#181926"
 
 # catppuccin - frappe
 # background = "#ca9ee6"
 # foreground = "#232634"
 
 # catppuccin - latte
-# background = "#9ca0b0"
-# foreground = "#4c4f69"
+background = "#9ca0b0"
+foreground = "#4c4f69"
 
 # nord
 # background = "#8fbcbb"
@@ -167,16 +167,16 @@ timeout = 5
 # frame_color = "#FAB387"
 
 # catppuccin - macchiato
-background = "#ed8796"
-foreground = "#181926"
+#background = "#ed8796"
+#foreground = "#181926"
 
 # catppuccin - frappe
 background = "#e78284"
 foreground = "#232634"
 
 # catppuccin - latte
-# background = "#d20f39"
-# foreground = "#dce0e8"
+background = "#d20f39"
+foreground = "#dce0e8"
 
 # nord
 # background = "#bf616a"

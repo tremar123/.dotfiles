@@ -62,7 +62,7 @@ vim.keymap.set("n", "<Leader>gtb", ":Gitsigns toggle_current_line_blame<CR>", Ke
 vim.keymap.set("n", "<F5>", ":lua require('dap').restart()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F8>", ":lua require('dap').continue()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F10>", ":lua require('dap').step_over()<CR>", Keymap_opts)
-vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
+vim.keymap.set("n", "<F11>", ":lua require('dap').step_into()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F23>", ":lua require('dap').step_out()<CR>", Keymap_opts)
 vim.keymap.set("n", "<F12>", ":lua require('dap').terminate()<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>db", ":lua require('dap').toggle_breakpoint()<CR>", Keymap_opts)
