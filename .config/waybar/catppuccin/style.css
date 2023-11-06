@@ -1,4 +1,4 @@
-@import "latte.css";
+@import "mocha.css";
 
 window#waybar {
   transition: background-color 1s;

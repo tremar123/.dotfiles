@@ -4,6 +4,7 @@ vim.g.maplocalleader = " "
 
 vim.cmd(":command! -bar -bang Q quit<bang>")
 vim.cmd(":command W w")
+vim.cmd(":command Qa qa")
 
 -- insert single char
 -- please somebody explain why this works with pressing TAB!
