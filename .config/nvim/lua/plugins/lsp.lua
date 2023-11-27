@@ -3,8 +3,11 @@ return {
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
+			"folke/neoconf.nvim",
 		},
 		config = function()
+			require("neoconf").setup()
+
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 			capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -163,6 +166,17 @@ return {
 				on_attach = on_attach,
 				capabilities = capabilities,
 				cmd = { "dotnet", vim.fn.stdpath("data") .. "/mason/packages/omnisharp/OmniSharp.dll" },
+			})
+
+			lspconfig.volar.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+				filetypes = (function()
+					if require("neoconf").get("lspconfig.volar") then
+						return { "vue", "typescript", "typescriptreact", "javascript", "javascriptreact" }
+					end
+					return { "vue" }
+				end)(),
 			})
 		end,
 	},

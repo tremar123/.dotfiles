@@ -39,6 +39,7 @@ return {
 					"tailwindcss-language-server",
 					"typescript-language-server",
 					"yaml-language-server",
+                    "vue-language-server",
 				},
 				run_on_start = false,
 			})
