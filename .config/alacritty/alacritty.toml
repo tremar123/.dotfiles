@@ -1,0 +1,10 @@
+import = [
+    "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[font]
+normal = { family = "NotoSansM Nerd Font", style = "Regular" }
+size = 14
+
+[window]
+opacity = 0.9
