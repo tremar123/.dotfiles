@@ -105,4 +105,5 @@ return {
             vim.cmd('highlight BufferLineFill guibg=NONE ctermbg=NONE')
 		end,
 	},
+    {"zirrostig/vim-jack-syntax"}
 }
