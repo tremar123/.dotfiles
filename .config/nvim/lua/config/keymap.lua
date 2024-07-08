@@ -21,6 +21,8 @@ vim.keymap.set("n", "<Leader>e", ":NvimTreeToggle<CR>", Keymap_opts)
 -- buffers
 vim.keymap.set("n", "<S-l>", ":bnext<CR>", Keymap_opts)
 vim.keymap.set("n", "<S-h>", ":bprev<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>bl", ":bnext<CR>", Keymap_opts)
+vim.keymap.set("n", "<Leader>bh", ":bprev<CR>", Keymap_opts)
 vim.keymap.set("n", "<Leader>bd", ":bd<CR>", Keymap_opts)
 
 -- visual - change indent

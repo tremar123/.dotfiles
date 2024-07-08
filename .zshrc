@@ -69,6 +69,8 @@ export PATH="$PATH:$HOME/go/bin"
 
 export PATH="$PATH:/opt/astap"
 
+export GRIM_DEFAULT_DIR="~/Pictures/screenshots"
+
 # up arrow completes command from history
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
