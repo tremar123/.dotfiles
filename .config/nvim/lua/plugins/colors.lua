@@ -1,16 +1,5 @@
 return {
 	{
-		"shaunsingh/nord.nvim",
-		lazy = true,
-		config = function()
-			vim.g.nord_italic = false
-			vim.g.nord_contrast = true
-			vim.g.nord_bold = false
-			vim.g.nord_disable_background = true
-		end,
-	},
-
-	{
 		"catppuccin/nvim",
 		lazy = true,
 		config = function()
@@ -37,7 +26,16 @@ return {
 			})
 		end,
 	},
-
+	{
+		"shaunsingh/nord.nvim",
+		lazy = true,
+		config = function()
+			vim.g.nord_italic = false
+			vim.g.nord_contrast = true
+			vim.g.nord_bold = false
+			vim.g.nord_disable_background = true
+		end,
+	},
 	{
 		"folke/tokyonight.nvim",
 		lazy = true,
@@ -63,10 +61,10 @@ return {
 				fold = false,
 			},
 			transparent_mode = true,
-            overrides = {
-                NormalFloat = { bg = "#3c3836" },
-                Pmenu = { bg = "#3c3836" },
-            }
+			overrides = {
+				NormalFloat = { bg = "#3c3836" },
+				Pmenu = { bg = "#3c3836" },
+			},
 		},
 	},
 

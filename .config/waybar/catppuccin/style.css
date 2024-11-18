@@ -3,7 +3,7 @@
 window#waybar {
   transition: background-color 1s;
   color: @text;
-  background-color: alpha(@crust, 0.95);
+  background-color: alpha(@crust, 1);
 }
 
 window#waybar.hidden {

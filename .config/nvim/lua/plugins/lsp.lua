@@ -29,9 +29,9 @@ return {
 				if client.server_capabilities.colorProvider then
 					require("document-color").buf_attach()
 				end
-				--[[ if client.server_capabilities.documentFormattingProvider then ]]
-				--[[ 	vim.keymap.set("n", "<Leader>n", ":lua vim.lsp.buf.format()<CR>", Keymap_opts) ]]
-				--[[ end ]]
+				if client.server_capabilities.documentFormattingProvider then
+					vim.keymap.set("n", "<Leader>n", ":lua vim.lsp.buf.format()<CR>", Keymap_opts)
+				end
 				vim.keymap.set("n", "gd", ":lua vim.lsp.buf.definition()<CR>", Keymap_opts)
 				vim.keymap.set("n", "gD", ":lua vim.lsp.buf.declaration()<CR>", Keymap_opts)
 				vim.keymap.set("n", "<Leader>lh", ":lua vim.lsp.buf.hover()<CR>", Keymap_opts)
@@ -63,7 +63,7 @@ return {
 				capabilities = capabilities,
 			})
 
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
 			})

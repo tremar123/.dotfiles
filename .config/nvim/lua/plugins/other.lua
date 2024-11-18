@@ -85,11 +85,12 @@ return {
 		config = function()
 			local bufferline = require("bufferline")
 			bufferline.setup({
+				highlights = require("catppuccin.groups.integrations.bufferline").get(),
 				options = {
 					offsets = {
 						{
 							filetype = "NvimTree",
-                            highlight = "NONE",
+							highlight = "NONE",
 						},
 					},
 					always_show_bufferline = false,
@@ -102,8 +103,8 @@ return {
 					color_icons = true,
 				},
 			})
-            vim.cmd('highlight BufferLineFill guibg=NONE ctermbg=NONE')
+			vim.cmd("highlight BufferLineFill guibg=NONE ctermbg=NONE")
 		end,
 	},
-    {"zirrostig/vim-jack-syntax"}
+	{ "zirrostig/vim-jack-syntax" },
 }
