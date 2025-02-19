@@ -165,6 +165,11 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.arduino_language_server.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
 			lspconfig.omnisharp.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,

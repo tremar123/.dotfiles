@@ -10,6 +10,7 @@ return {
 			require("mason-tool-installer").setup({
 				ensure_installed = {
 					"ansible-language-server",
+                    "arduino-language-server",
 					"astro-language-server",
 					"autopep8",
 					"awk-language-server",
