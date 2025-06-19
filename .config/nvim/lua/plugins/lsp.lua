@@ -176,6 +176,11 @@ return {
 				cmd = { "dotnet", vim.fn.stdpath("data") .. "/mason/packages/omnisharp/OmniSharp.dll" },
 			})
 
+            lspconfig.phpactor.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
 			lspconfig.volar.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,

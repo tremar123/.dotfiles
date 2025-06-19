@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=FreeCAD (XWayland)
+Exec=env QT_QPA_PLATFORM=xcb freecad
+Icon=freecad
+Type=Application
+Categories=Graphics;Engineering;
+Comment=CAD Application
+Terminal=false
+StartupWMClass=FreeCAD
