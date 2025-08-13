@@ -32,6 +32,7 @@ return {
 					"lua-language-server",
 					"netcoredbg",
 					"omnisharp",
+                    "phpactor",
 					"prettier",
 					"prisma-language-server",
 					"pyright",

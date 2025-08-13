@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=FreeCAD (X11)
-Exec=env GDK_BACKEND=x11 freecad
-Icon=freecad
-Type=Application
-Categories=Graphics;Engineering;
-Comment=CAD Application
-Terminal=false
-StartupWMClass=FreeCAD
