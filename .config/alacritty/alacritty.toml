@@ -4,7 +4,7 @@ normal = { family = "NotoSansM Nerd Font", style = "Regular" }
 size = 14
 
 [window]
-opacity = 0.9
+opacity = 1
 startup_mode = "Maximized"
 
 [general]
