@@ -181,6 +181,12 @@ return {
 				capabilities = capabilities,
 			})
 
+            lspconfig.openscad_lsp.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
+			})
+
+
 			lspconfig.volar.setup({
 				on_attach = on_attach,
 				capabilities = capabilities,
